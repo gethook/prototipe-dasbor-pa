@@ -1,0 +1,4913 @@
+
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+	<meta name="description" content="Modern admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities with bitcoin dashboard.">
+	<meta name="keywords" content="admin template, modern admin template, dashboard template, flat admin template, responsive admin template, web app, crypto dashboard, bitcoin dashboard">
+	<meta name="author" content="PIXINVENT">
+	<title>Dashboard Pelaksanaan Anggaran BA 015 - Kementerian Keuangan</title>
+	<link href="http://localhost:8888/Dashboard-BA015/app-assets/login/img/favicon.png" rel="shortcut icon">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Quicksand:300,400,500,700" rel="stylesheet">
+	<!-- <link href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css" rel="stylesheet"> -->
+	<link rel="stylesheet" type="text/css" href="http://localhost:8888/Dashboard-BA015/app-assets/fonts/line-awesome/css/line-awesome.min.css">
+	<!-- BEGIN VENDOR CSS-->
+	<link rel="stylesheet" type="text/css" href="http://localhost:8888/Dashboard-BA015/app-assets/css/vendors.css">
+	<!-- <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/weather-icons/climacons.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="http://localhost:8888/Dashboard-BA015/app-assets/fonts/meteocons/style.css">
+	<link rel="stylesheet" type="text/css" href="http://localhost:8888/Dashboard-BA015/app-assets/vendors/css/charts/morris.css">
+	<link rel="stylesheet" type="text/css" href="http://localhost:8888/Dashboard-BA015/app-assets/vendors/css/charts/chartist.css">
+	<link rel="stylesheet" type="text/css" href="http://localhost:8888/Dashboard-BA015/app-assets/vendors/css/charts/chartist-plugin-tooltip.css">
+
+
+	<link rel="stylesheet" type="text/css" href="http://localhost:8888/Dashboard-BA015/app-assets/vendors/css/tables/datatable/datatables.min.css">
+	<link rel="stylesheet" type="text/css" href="http://localhost:8888/Dashboard-BA015/app-assets/vendors/css/tables/extensions/buttons.dataTables.min.css">
+	<link rel="stylesheet" type="text/css" href="http://localhost:8888/Dashboard-BA015/app-assets/vendors/css/tables/datatable/buttons.bootstrap4.min.css">
+	<link rel="stylesheet" type="text/css" href="http://localhost:8888/Dashboard-BA015/app-assets/vendors/css/tables/datatable/select.dataTables.min.css">
+	<link rel="stylesheet" type="text/css" href="http://localhost:8888/Dashboard-BA015/app-assets/vendors/css/tables/extensions/fixedColumns.dataTables.min.css">
+	<link rel="stylesheet" type="text/css" href="http://localhost:8888/Dashboard-BA015/app-assets/vendors/css/forms/selects/select2.min.css">
+	<!-- END VENDOR CSS-->
+	<!-- BEGIN MODERN CSS-->
+	<link rel="stylesheet" type="text/css" href="http://localhost:8888/Dashboard-BA015/app-assets/css/app.css">
+	<!-- END MODERN CSS-->
+	<!-- BEGIN Page Level CSS-->
+	<link rel="stylesheet" type="text/css" href="http://localhost:8888/Dashboard-BA015/app-assets/css/core/menu/menu-types/vertical-overlay-menu.css">
+	<link rel="stylesheet" type="text/css" href="http://localhost:8888/Dashboard-BA015/app-assets/css/core/colors/palette-gradient.css">
+	<link rel="stylesheet" type="text/css" href="http://localhost:8888/Dashboard-BA015/app-assets/fonts/simple-line-icons/style.css">
+	<link rel="stylesheet" type="text/css" href="http://localhost:8888/Dashboard-BA015/app-assets/vendors/css/cryptocoins/cryptocoins.css">
+	<link rel="stylesheet" type="text/css" href="http://localhost:8888/Dashboard-BA015/app-assets/css/core/colors/palette-gradient.css">
+	<link rel="stylesheet" type="text/css" href="http://localhost:8888/Dashboard-BA015/app-assets/css/pages/timeline.css">
+	<link rel="stylesheet" type="text/css" href="http://localhost:8888/Dashboard-BA015/app-assets/css/pages/dashboard-ecommerce.css">
+	<link rel="stylesheet" type="text/css" href="http://localhost:8888/Dashboard-BA015/app-assets/css/core/colors/palette-callout.css">
+	<!-- END Page Level CSS-->
+	<!-- BEGIN Custom CSS-->
+	<link rel="stylesheet" type="text/css" href="http://localhost:8888/Dashboard-BA015/assets/css/style.css">
+	<!-- END Custom CSS-->
+
+	<style type="text/css">
+			#myChart {
+				height: 100%;
+				width: 100%;
+				min-height: 150px;
+			}
+		
+			.zc-ref {
+				display: none;
+			}
+		}
+	</style>
+
+	<style type="text/css">
+			svg > g[class^="raphael-group-"] > text{
+			display: none;
+		}
+	</style>
+</head>
+
+<body class="vertical-layout vertical-overlay-menu 2-columns menu-expanded fixed-navbar" data-open="click" data-menu="vertical-overlay-menu" data-col="2-columns">
+	<!-- fixed-top-->
+	<nav class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-dark bg-primary navbar-shadow navbar-brand-center">
+		<div class="navbar-wrapper">
+			<div class="navbar-header">
+				<ul class="nav navbar-nav flex-row">
+					<li class="nav-item mobile-menu d-md-none mr-auto">
+						<a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#">
+							<i class="ft-menu font-large-1"></i>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="navbar-brand" href="#">
+							<h3 class="brand-text">Dashboard Pelaksanaan Anggaran</h3>
+						</a>
+					</li>
+					<li class="nav-item d-md-none">
+						<a class="nav-link open-navbar-container" data-toggle="collapse" data-target="#navbar-mobile">
+							<i class="la la-ellipsis-v"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="navbar-container content">
+				<div class="collapse navbar-collapse" id="navbar-mobile">
+					<ul class="nav navbar-nav mr-auto float-left">
+						<li class="nav-item d-none d-md-block">
+							<a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#">
+								<i class="ft-menu"></i>
+							</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav float-right">
+						<li class="dropdown dropdown-user nav-item">
+							<a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
+																<span class="mr-1">Hello,
+									<span class="user-name text-bold-700">Akhmad Syarifudin</span>
+								</span>
+								<span class="avatar avatar-online">
+									<img src=https://account.kemenkeu.go.id/manage/uploads/thumbnails/060114098.jpg alt="Akhmad Syarifudin" style="width:30px; height:30px;"><i></i>
+								</span>
+															</a>
+							<div class="dropdown-menu dropdown-menu-right">
+								<a class="dropdown-item" href="http://localhost:8888/Dashboard-BA015/login/logout">
+									<i class="ft-power"></i> Logout
+								</a>
+							</div>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav float-right">
+						<li class="nav-item d-none d-md-block">
+							<br>
+							<form action="http://localhost:8888/Dashboard-BA015/tahun/anggaran" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+								<div class="form-group">
+									<select name="tahun" class="form-control input-sm" id="SmallSelect" required onchange="this.form.submit();">
+										<!-- <option value="">Please Select</option> -->
+																					<!-- <option value=""></option> -->
+											<option value="2021" selected="selected"> 2021 </option>
+																					<!-- <option value=""></option> -->
+											<option value="2020" > 2020 </option>
+																					<!-- <option value=""></option> -->
+											<option value="2019" > 2019 </option>
+																			</select>
+								</div>
+							</form>						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+  	</nav>
+  	<!-- ////////////////////////////////////////////////////////////////////////////-->
+  	<div class="main-menu menu-fixed menu-light menu-accordion menu-shadow menu-border" data-scroll-to-active="true">
+		<div class="main-menu-content">
+      		<ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+				<li class="active"><a href="http://localhost:8888/Dashboard-BA015/"><i class="la la-home"></i><span class="menu-title" data-i18n="nav.dash.main">Beranda</span></a></li>
+				<li class=" nav-item"><a href="http://localhost:8888/Dashboard-BA015/realisasi"><i class="la la-copy"></i><span class="menu-title" data-i18n="nav.dash.main">Realisasi Anggaran</span></a></li>
+				<li class=" nav-item"><a href="http://localhost:8888/Dashboard-BA015/tren"><i class="la la-line-chart"></i><span class="menu-title" data-i18n="nav.dash.main">Tren Realisasi</span></a></li>
+				<li class=" nav-item"><a href="http://localhost:8888/Dashboard-BA015/unit"><i class="la la-table"></i><span class="menu-title" data-i18n="nav.bootstrap_tables.main">Per Unit Eselon I</span></a></li>
+				<li class=" nav-item"><a href="http://localhost:8888/Dashboard-BA015/monev"><i class="la la-pie-chart"></i><span class="menu-title" data-i18n="nav.bootstrap_tables.main">Monev Belanja Modal</span></a></li>
+				<li class=" nav-item"><a href="http://localhost:8888/Dashboard-BA015/blu"><i class="la la-list"></i><span class="menu-title" data-i18n="nav.bootstrap_tables.main">BLU dan Non BLU</span></a></li>
+				<li class=" nav-item"><a href="http://localhost:8888/Dashboard-BA015/penghematan"><i class="la la-arrows"></i><span class="menu-title" data-i18n="nav.bootstrap_tables.main">Penghematan Anggaran</span></a></li>
+				<li class=" nav-item"><a href="http://localhost:8888/Dashboard-BA015/penjelasan"><i class="la la-comment"></i><span class="menu-title" data-i18n="nav.bootstrap_tables.main">Penjelasan Pengehematan</span></a></li>
+				<li class=" nav-item"><a href="http://localhost:8888/Dashboard-BA015/peringkat"><i class="la la-sort-numeric-desc"></i><span class="menu-title" data-i18n="nav.bootstrap_tables.main">Peringkat Pagu Realisasi</span></a></li>
+				<li class=" nav-item"><a href="http://localhost:8888/Dashboard-BA015/capaian"><i class="la la-star"></i><span class="menu-title" data-i18n="nav.bootstrap_tables.main">Capaian PN</span></a></li>
+				<li class=" nav-item"><a href="http://localhost:8888/Dashboard-BA015/ikpa"><i class="la la-certificate"></i><span class="menu-title" data-i18n="nav.bootstrap_tables.main">IKPA</span></a></li>
+				<li class=" nav-item"><a href="http://localhost:8888/Dashboard-BA015/smart"><i class="la la-check-circle"></i><span class="menu-title" data-i18n="nav.bootstrap_tables.main">SMART</span></a></li>
+				<li class=" nav-item"><a href="http://localhost:8888/Dashboard-BA015/console/setting"><i class="la la-gears"></i><span class="menu-title" data-i18n="nav.bootstrap_tables.main">Console</span></a></li>
+				<li class=" nav-item"><a href="http://localhost:8888/Dashboard-BA015/analisis"><i class="la la-newspaper-o"></i><span class="menu-title" data-i18n="nav.bootstrap_tables.main">Analisis Belanja</span></a></li>
+				<!-- <li class=" nav-item"><a href="http://localhost:8888/Dashboard-BA015/trend"><i class="la la-line-chart"></i><span class="menu-title" data-i18n="nav.d3_charts.main">Trend</span></a></li> -->
+				<!-- <li class=" nav-item"><a href="http://localhost:8888/Dashboard-BA015/anggaran"><i class="la la-clipboard"></i><span class="menu-title" data-i18n="nav.invoice.main">Anggaran Tahun Depan</span></a></li> -->
+			</ul>
+		</div>
+	</div>
+	<div class="app-content content">
+		<div class="content-wrapper">
+			<div class="content-header row">
+							</div>            <div class="content-body">
+                                <!-- Trade History & Place Order -->
+
+                <!--
+                <div class="row">
+                    <div class="col-xl-2 col-12"></div>
+                    <div class="col-xl-2 col-12"></div>
+                    <div class="col-xl-2 col-12"></div>
+                    <div class="col-xl-2 col-12"></div>
+                    <div class="col-xl-2 col-12">
+                                            </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-xl-6 col-12">
+                        <div class="row">
+                            <div class="col-lg-6 col-12">
+                                <div class="card pull-up">
+                                    <div class="card-header bg-hexagons">
+                                        <h4 class="card-title">Realisasi Anggaran
+                                            <span class="danger">-12%</span>
+                                        </h4>
+                                        <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+                                        <div class="heading-elements">
+                                            <ul class="list-inline mb-0">
+                                                <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                                            </ul> 
+                                        </div>
+                                    </div>
+                                    <div class="card-content collapse show bg-hexagons">
+                                        <div class="card-body pt-0">
+                                            <div class="chartjs">
+                                                <canvas id="hit-rate-doughnut" height="250"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            -->
+                            <!--
+                            <div class="col-xl-6 col-lg-6 col-12">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="media align-items-stretch">
+                                            <div class="p-2 text-center bg-info rounded-left">
+                                                <i class="icon-camera font-large-2 text-white"></i>
+                                            </div>
+                                            <div class="p-2 media-body">
+                                                <h6>BELANJA PEGAWAI</h6>
+                                                <h7 class="text-bold-400 mb-0">PAGU: Rp42,467.058,183,000</h7>
+                                                <h7 class="text-bold-400 mb-0">REAL: Rp42,467.058,183,000</h7>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="media align-items-stretch">
+                                            <div class="p-2 text-center bg-success rounded-left">
+                                                <i class="icon-basket-loaded font-large-2 text-white"></i>
+                                            </div>
+                                            <div class="p-2 media-body">
+                                                <h5>BELANJA BARANG</h5>
+                                                <h5 class="text-bold-400 mb-0">Rp13,588,885,681,390</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="media align-items-stretch">
+                                            <div class="p-2 text-center bg-success rounded-left">
+                                                <i class="icon-basket-loaded font-large-2 text-white"></i>
+                                            </div>
+                                            <div class="p-2 media-body">
+                                                <h5>BELANJA MODAL</h5>
+                                                <h5 class="text-bold-400 mb-0">Rp13,588,885,681,390</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+
+                -->
+                
+
+                <!-- Realisasi Anggaran Kemenkeu -->
+                <div class="row">
+                    <div class="col-xl-2 col-lg-6 col-12">
+                        <div class="card pull-up bg-gradient-x-info" style="height: 201px;">
+                            <div class="card-content">
+                                <div class="row">
+                                    <div class="col-sm-12 border-bottom-info border-bottom-lighten-5">
+                                        <div class="card-body text-center">
+                                            <span class="text-white">Pagu</span>
+                                            <h3 class="display-5 text-white">Rp42,467 T</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="card-body text-center">
+                                            <span class="text-white">Realisasi</span>
+                                            <h3 class="display-5 text-white">Rp13,572 T</h3>
+                                            <span class="text-white" style="font-size:12px">(Termasuk BLU)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card pull-up bg-gradient-x-warning" style="height: 201px;">
+                            <div class="card-content">
+                                <div class="row">
+                                    <div class="col-sm-12 border-bottom-warning border-bottom-lighten-5">
+                                        <div class="card-body text-center">
+                                            <span class="text-white">Pagu</span>
+                                            <h3 class="display-5 text-white">Rp34,143 T</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="card-body text-center">
+                                            <span class="text-white">Realisasi</span>
+                                            <h3 class="display-5 text-white">Rp8,098 T</h3>
+                                            <span class="text-white" style="font-size:12px">(Non BLU)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-12">
+						<div class="card pull-up">
+							<div class="card-header bg-hexagons"  style="height: 428px;">
+                                <!-- <h4 class="card-title">Perbandingan Realisasi Anggaran dan RPD Kementerian Keuangan</h4> -->
+                                <h4 class="card-title">
+                                    <b>Realisasi Anggaran Kementerian Keuangan Termasuk BLU s.d 19 Mei 2021</b>
+                                </h4>
+                                <div id="basic-gauge" class="height-400 echart-container"></div>
+								<!-- <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a> -->
+							</div>
+							<!-- <div class="card-content collapse show bg-hexagons"> -->
+								<!-- <div class="card-body"> -->
+                                    <!-- <div id="basic-gauge" class="height-400 echart-container"></div> -->
+                                <!-- </div> -->
+                            <!-- </div> -->
+						</div>
+                    </div>
+
+                    <div class="col-xl-3 col-12">
+                        <div class="row">
+                                                        <div class="col-lg-12 col-12">
+								<div class="card pull-up">
+									<div class="card-content bg-hexagons">
+										<div class="card-body">
+											<div class="media d-flex" style="height: 62px;">
+												<div class="media-body text-left">
+													<h5 class="info"><b>Belanja Pegawai</b></h5>
+                                                    <!-- <h6><b></b></h6> -->
+                                                    <h7>
+                                                        Pagu: Rp22,592.90M<br>
+                                                        Realisasi: Rp9,177.21M<br>
+                                                    </h7>
+												</div>
+												<div>
+													<!-- <i class="icon- font-large-2 float-right"></i> -->
+                                                    <h5 class="info"><b>40.62%</b></h5>
+												</div>
+											</div>
+											<div class="progress progress-sm mt-1 mb-0 box-shadow-2">
+												<div class="progress-bar bg-gradient-x-info" role="progressbar" style="width: 40.62%;" aria-valuenow="40.62" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+                            </div>
+                                                        <div class="col-lg-12 col-12">
+								<div class="card pull-up">
+									<div class="card-content bg-hexagons">
+										<div class="card-body">
+											<div class="media d-flex" style="height: 62px;">
+												<div class="media-body text-left">
+													<h5 class="warning"><b>Belanja Barang</b></h5>
+                                                    <!-- <h6><b></b></h6> -->
+                                                    <h7>
+                                                        Pagu: Rp16,993.53M<br>
+                                                        Realisasi: Rp7,270.60M<br>
+                                                    </h7>
+												</div>
+												<div>
+													<!-- <i class="icon- font-large-2 float-right"></i> -->
+                                                    <h5 class="warning"><b>42.78%</b></h5>
+												</div>
+											</div>
+											<div class="progress progress-sm mt-1 mb-0 box-shadow-2">
+												<div class="progress-bar bg-gradient-x-warning" role="progressbar" style="width: 42.78%;" aria-valuenow="42.78" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+                            </div>
+                                                        <div class="col-lg-12 col-12">
+								<div class="card pull-up">
+									<div class="card-content bg-hexagons">
+										<div class="card-body">
+											<div class="media d-flex" style="height: 62px;">
+												<div class="media-body text-left">
+													<h5 class="success"><b>Belanja Modal</b></h5>
+                                                    <!-- <h6><b></b></h6> -->
+                                                    <h7>
+                                                        Pagu: Rp2,880.63M<br>
+                                                        Realisasi: Rp211.01M<br>
+                                                    </h7>
+												</div>
+												<div>
+													<!-- <i class="icon- font-large-2 float-right"></i> -->
+                                                    <h5 class="success"><b>7.33%</b></h5>
+												</div>
+											</div>
+											<div class="progress progress-sm mt-1 mb-0 box-shadow-2">
+												<div class="progress-bar bg-gradient-x-success" role="progressbar" style="width: 7.33%;" aria-valuenow="7.33" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+                            </div>
+                                                    </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-6 col-12">
+                        <div class="row">
+                            <div class="col-lg-12 col-12">
+                                <div class="card pull-up">
+                                    <div class="card-content collapse show bg-hexagons" style="height: 125px;">
+                                        <div id="customizedGaugePKPA" class="height-200 echart-container"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-12 col-12">
+                                <div class="card pull-up">
+                                    <div class="card-content collapse show bg-hexagons" style="height: 125px;">
+                                        <div id="customizedGaugeIKPA" class="height-200 echart-container"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-12 col-12">
+                                <div class="card pull-up">
+                                    <div class="card-content collapse show bg-hexagons" style="height: 125px;">
+                                        <div id="customizedGaugeSMART" class="height-200 echart-container"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/ Realisasi Anggaran Kemenkeu -->
+
+                <!-- Peta Sebaran Pagu dan Realisasi Per Propinsi -->
+                <div class="row">
+                    <div class="col-xl-12 col-12">
+						<div class="card">
+                            <div class="card-header bg-hexagons">
+                                <h4 class="card-title">Peta Sebaran Realisasi Per Propinsi Tahun 2021</h4>
+                                <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+                            </div>
+                            
+                            <div class="card-content collapse show bg-hexagons">
+                                <div class="card-body">
+                                    <div id="chart-container">A world map will load here!</div>
+                                    <!-- <div id="debugger-output"></div> -->
+                                </div>
+                            </div>
+                            <!-- <div style="padding:10px;">
+                                Keterangan : <br>
+                                Sumber Data Outlook bulanan berdasarkan Rencana Penarikan Dana (RPD) revisi dari DSP, DJA melalui SLDK
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- end of Peta Sebaran Pagu dan Realisasi Per Propinsi -->
+
+                <!-- Realisasi Anggaran YoY Per Jenis Belanja -->
+                <div class="row">
+                    <div class="col-xl-9 col-12">
+                        <div class="card pull-up">
+                            <div class="card-header bg-hexagons">
+                                <h4 class="card-title"><strong>Monitoring Saldo Per Kategori</strong></h4>
+                                <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+                            </div>
+                            <div class="card-content collapse show bg-hexagons">
+                                <div class="card-body">
+                                    <div id="saldo-kategori" class="height-350 echart-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-12">
+                        <div class="card pull-up">
+                            <div class="card-header bg-hexagons">
+                                <h4 class="card-title"><strong>Uang Dikelola Bendahara</strong></h4>
+                                <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+                                <div class="heading-elements">
+                                    <!-- <ul class="list-inline mb-0">
+                                        <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                                        <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                                        <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+                                        <li><a data-action="close"><i class="ft-x"></i></a></li>
+                                    </ul> -->
+                                </div>
+                            </div>
+                            <div class="card-content collapse show">
+                                <div class="card-body bg-hexagons">
+                                    <div id="uang-di-bendahara" class="height-350 echart-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of Realisasi Anggaran YoY Per Jenis Belanja -->
+
+                <!-- Realisasi Anggaran YoY Per Jenis Belanja -->
+                <div class="row">
+                    <div class="col-xl-4 col-12">
+                        <div class="card pull-up">
+                            <div class="card-header bg-hexagons">
+                                <h4 class="card-title"><strong>Belanja Modal Risiko Tinggi</strong></h4>
+                                <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+                                <div class="heading-elements">
+                                    <!-- <ul class="list-inline mb-0">
+                                        <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                                        <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                                        <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+                                        <li><a data-action="close"><i class="ft-x"></i></a></li>
+                                    </ul> -->
+                                </div>
+                            </div>
+                            <div class="card-content collapse show">
+                                <div class="card-body bg-hexagons">
+                                    <div id="bmrt" class="height-350 echart-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-8 col-12">
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12">
+                                <div class="card pull-up">
+                                    <div class="card-header bg-hexagons show">
+                                        <h4 class="card-title"><strong>Daftar Belanja Modal Risiko Tinggi</strong></h4>
+                                        <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+                                    </div>
+                                    <div class="card-content bg-hexagons" style="font-size: 13px">
+                                        <div class="table-responsive">
+                                            <table class="table bg-info table-bordered table-striped table-hover black" id="with_blu">
+                                                <thead>
+                                                    <tr>
+                                                        <th>UE 1</th>
+                                                        <th>Satker</th>
+                                                        <th>Paket/<br>Item</th>
+                                                        <th>Jenis<br>Belanja</th>
+                                                        <th>Pagu</th>
+                                                        <th>Realisasi<br>Fisik</th>
+                                                        <th>Realisasi<br>Anggaran</th>
+                                                        <th>Status</th>
+                                                        <th>Kendala/<br>Hambatan</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Setjen</td>
+                                                        <td>Biro X</td>
+                                                        <td>Pengadaan Barang</td>
+                                                        <td>Gedung / Bangunan</td>
+                                                        <td style="text-align: right">Rp1.050M</td>
+                                                        <td style="text-align: center">15%</td>
+                                                        <td style="text-align: right">Rp305M</td>
+                                                        <td>Proses Pengerjaan</td>
+                                                        <td>Perijinan Tanah pada Pemprov DKI</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>DJPB</td>
+                                                        <td>KPPN X</td>
+                                                        <td>Renovasi Rumah Dinas</td>
+                                                        <td>Gedung / Bangunan</td>
+                                                        <td style="text-align: right">Rp100M</td>
+                                                        <td style="text-align: center">0%</td>
+                                                        <td style="text-align: right">Rp0</td>
+                                                        <td>Proses Lelang</td>
+                                                        <td>Terdapat kekurangan pada dokumen pengadaan</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>DJBC</td>
+                                                        <td>KPPBC X</td>
+                                                        <td>Pengadaan Alusista</td>
+                                                        <td>Peralatan dan Mesin</td>
+                                                        <td style="text-align: right">Rp300M</td>
+                                                        <td style="text-align: center">0%</td>
+                                                        <td style="text-align: right">Rp0</td>
+                                                        <td>Proses Pengerjaan</td>
+                                                        <td>Paket dari Luar Negeri terhambat di terusan Suez</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>LNSW</td>
+                                                        <td>LNSW</td>
+                                                        <td>Pengadaan Sistem Aplikasi</td>
+                                                        <td>Teknologi Informasi</td>
+                                                        <td style="text-align: right">Rp150M</td>
+                                                        <td style="text-align: center">0%</td>
+                                                        <td style="text-align: right">Rp0</td>
+                                                        <td>Proses Lelang</td>
+                                                        <td>Terdapat kekurangan pada dokumen pengadaan</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of Realisasi Anggaran YoY Per Jenis Belanja -->
+
+                <div class="row">
+                    <div class="col-xl-9 col-12">
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12">
+                                <div class="card pull-up">
+                                    <div class="card-header bg-hexagons">
+                                        <h4 class="card-title"><strong>Pejabat Perbendaharaan di Kementerian Keuangan</strong></h4>
+                                        <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+                                    </div>
+                                    <div class="card-content bg-hexagons">
+                                        <div id="new-orders" class="media-list position-relative">
+                                            <div class="table-responsive">
+                                                <table id="new-orders-table" class="table table-hover table-xl mb-0">
+                                                    <thead>
+                                                        <tr>
+                                                        <th class="border-top-0">Jenis Jabatan</th>
+                                                        <th class="border-top-0">KPA</th>
+                                                        <th class="border-top-0">PPK</th>
+                                                        <th class="border-top-0">PPSPM</th>
+                                                        <th class="border-top-0">Bendahara</th>
+                                                        <th class="border-top-0">PPABP</th>
+                                                        <th class="border-top-0">Penyusunan SAI</th>
+                                                        <th class="border-top-0">Total</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="text-truncate">Jumlah</td>
+                                                            <td class="text-truncate" style="text-align: right">653</td>
+                                                            <td class="text-truncate" style="text-align: right">702</td>
+                                                            <td class="text-truncate" style="text-align: right">655</td>
+                                                            <td class="text-truncate" style="text-align: right">1620</td>
+                                                            <td class="text-truncate" style="text-align: right">902</td>
+                                                            <td class="text-truncate" style="text-align: right">650</td>
+                                                            <td class="text-truncate" style="text-align: right">5182</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-6 col-12">
+                                <div class="card pull-up">
+                                    <div class="card-header bg-hexagons">
+                                        <h4 class="card-title"><strong>Komposisi Jafung</strong></h4>
+                                        <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+                                        <div class="heading-elements">
+                                        </div>
+                                    </div>
+                                    <div class="card-content collapse show">
+                                        <div class="card-body bg-hexagons">
+                                            <div id="komposisi-jafung" class="height-200 echart-container"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-6 col-12">
+                                <div class="card pull-up">
+                                    <div class="card-header bg-hexagons">
+                                        <h4 class="card-title"><strong>Komposisi Per Jenis Jabatan</strong></h4>
+                                        <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+                                        <div class="heading-elements">
+                                        </div>
+                                    </div>
+                                    <div class="card-content collapse show">
+                                        <div class="card-body bg-hexagons">
+                                            <div id="komposisi-jabatan" class="height-200 echart-container"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-12">
+                        <div class="card pull-up">
+                            <div class="card-header bg-hexagons">
+                                <h4 class="card-title"><strong>Sisa Pagu dan Realisasi Tukin</strong></h4>
+                                <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+                                <div class="heading-elements">
+                                </div>
+                            </div>
+                            <div class="card-content collapse show">
+                                <div class="card-body bg-hexagons">
+                                    <div id="informasi-tukin" class="height-400 echart-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of Realisasi Anggaran YoY Per Jenis Belanja -->
+
+                <!-- Realisasi Anggaran YoY Per Jenis Belanja -->
+                <!-- <div class="row">
+                    <div class="col-xl-3 col-12">
+                        <div class="card pull-up">
+                            <div class="card-header bg-hexagons">
+                                <h4 class="card-title"><strong>Komposisi Jafung</strong></h4>
+                                <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+                                <div class="heading-elements">
+                                </div>
+                            </div>
+                            <div class="card-content collapse show">
+                                <div class="card-body bg-hexagons">
+                                    <div id="komposisi-jafung" class="height-400 echart-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xl-3 col-12">
+                        <div class="card pull-up">
+                            <div class="card-header bg-hexagons">
+                                <h4 class="card-title"><strong>Komposisi Per Jenis Jabatan</strong></h4>
+                                <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+                                <div class="heading-elements">
+                                </div>
+                            </div>
+                            <div class="card-content collapse show">
+                                <div class="card-body bg-hexagons">
+                                    <div id="komposisi-jabatan" class="height-400 echart-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-12">
+                        <div class="card pull-up">
+                            <div class="card-header bg-hexagons">
+                                <h4 class="card-title"><strong>asdas</strong></h4>
+                                <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+                                <div class="heading-elements">
+                                </div>
+                            </div>
+                            <div class="card-content collapse show">
+                                <div class="card-body bg-hexagons">
+                                    <div id="komposisi-jabatan" class="height-400 echart-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-12">
+                        <div class="card pull-up">
+                            <div class="card-header bg-hexagons">
+                                <h4 class="card-title"><strong>Sisa Pagu dan Realisasi Tukin</strong></h4>
+                                <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+                                <div class="heading-elements">
+                                </div>
+                            </div>
+                            <div class="card-content collapse show">
+                                <div class="card-body bg-hexagons">
+                                    <div id="informasi-tukin" class="height-400 echart-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- end of Realisasi Anggaran YoY Per Jenis Belanja -->
+
+                <!-- Realisasi Anggaran dan Outlook  -->
+                                
+                <!-- Realisasi Anggaran YoY Per Jenis Belanja -->
+                <!--
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header bg-hexagons">
+                                <h4 class="card-title">Penyerapan Anggaran YoY Per Jenis Belanja</h4>
+                                <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+                            </div>
+                            <div class="card-content collapse show bg-hexagons">
+                                <div class="card-body">
+                                    <div id="basic-column" class="height-400 echart-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                -->
+                <!-- end of Realisasi Anggaran YoY Per Jenis Belanja -->
+
+                
+                
+                            </div>
+    </div>
+    </div>
+    
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
+    <footer class="footer footer-static footer-light navbar-border navbar-shadow">
+        <p class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2">
+            <span class="float-md-left d-block d-md-inline-block">Copyright &copy; 2020 <a class="text-bold-800 grey darken-2" href="http://www.setjen.kemenkeu.go.id" target="_blank">SEKRETARIAT JENDERAL</a>, All rights reserved. </span>
+            <!-- <span class="float-md-right d-block d-md-inline-blockd-none d-lg-block">Hand-crafted & Made with <i class="ft-heart pink"></i></span> -->
+        </p>
+    </footer>
+
+    
+    
+    <!-- BEGIN VENDOR JS-->
+    <script src="http://localhost:8888/Dashboard-BA015/app-assets/vendors/js/vendors.min.js" type="text/javascript"></script>
+    <!-- BEGIN VENDOR JS-->
+    <!-- BEGIN PAGE VENDOR JS-->
+    <!-- <script src="app-assets/vendors/js/charts/chartist.min.js" type="text/javascript"></script> -->
+    <!-- <script src="app-assets/vendors/js/charts/chartist-plugin-tooltip.min.js" type="text/javascript"></script> -->
+    <script src="http://localhost:8888/Dashboard-BA015/app-assets/vendors/js/charts/raphael-min.js" type="text/javascript"></script>
+    <script src="http://localhost:8888/Dashboard-BA015/app-assets/vendors/js/charts/morris.min.js" type="text/javascript"></script>
+    <script src="http://localhost:8888/Dashboard-BA015/app-assets/vendors/js/timeline/horizontal-timeline.js" type="text/javascript"></script>
+
+    <!-- <script src="app-assets/vendors/js/charts/echarts/echarts.js" type="text/javascript"></script> -->
+    <!-- END PAGE VENDOR JS-->
+    <!-- BEGIN MODERN JS-->
+    <script src="http://localhost:8888/Dashboard-BA015/app-assets/js/core/app-menu.js" type="text/javascript"></script>
+    <script src="http://localhost:8888/Dashboard-BA015/app-assets/js/core/app.js" type="text/javascript"></script>
+    <script src="http://localhost:8888/Dashboard-BA015/app-assets/js/scripts/customizer.js" type="text/javascript"></script>
+    <!-- END MODERN JS-->
+    <!-- BEGIN PAGE LEVEL JS-->
+    <script src="http://localhost:8888/Dashboard-BA015/app-assets/js/scripts/pages/dashboard-ecommerce.js" type="text/javascript"></script>
+    
+    <script src="http://localhost:8888/Dashboard-BA015/app-assets/vendors/js/charts/echarts/chart/funnel.js" type="text/javascript"></script>
+    <script src="http://localhost:8888/Dashboard-BA015/app-assets/vendors/js/charts/echarts/chart/gauge.js" type="text/javascript"></script>
+    <script src="http://localhost:8888/Dashboard-BA015/app-assets/vendors/js/charts/echarts/chart/bar.js" type="text/javascript"></script>
+    <script src="http://localhost:8888/Dashboard-BA015/app-assets/vendors/js/charts/echarts/chart/line.js" type="text/javascript"></script>
+    <!-- END PAGE LEVEL JS-->
+
+    <script src="http://localhost:8888/Dashboard-BA015/app-assets/vendors/js/echarts.min.js" type="text/javascript"></script>
+
+    
+
+    <script type="text/javascript">
+        // Initialize chart
+        // ------------------------------
+        var myGaugeChart = echarts.init(document.getElementById('basic-gauge'));
+
+        // Chart Options
+        // ------------------------------
+        basicgaugeOptions = {
+
+            // Add tooltip
+            tooltip : {
+                formatter: "{a}{b} : {c}%"
+            },
+
+            // Add toolbox
+            toolbox: {
+                show : true,
+                // feature : {
+                //     mark : {show: true},
+                //     restore : {show: true},
+                //     saveAsImage : {show: true}
+                // }
+            },
+
+            // Enable drag recalculate
+            calculable: true,
+
+            // Add series
+            series : [
+                {
+                    name : 'Kementerian Keuangan',
+                    type : 'gauge',
+                    detail : {
+                        formatter: '{value}%',
+                        offsetCenter: [0, '60%'],
+                        textStyle: {
+                            fontFamily: 'Quicksand',
+                            fontSize: 30,
+                            fontWeight: 'bold',
+                            // color: '#F37B1D'
+                        }
+                    },
+                    title : {
+                        offsetCenter: [0, '100%'],
+                        textStyle: {
+                            fontSize: 30,
+                            color: '#F37B1D'
+                        }
+                    },
+                    data : [{
+                        value: 39.23,
+                        // name: 'RPD : '
+                    }],
+                    splitNumber: 20,
+                    axisLine: {
+                        lineStyle: {
+                            color: [
+                                [0.2, '#FF4500'],
+                                //[0.8, '#48b'],
+                                [0.8, '#FFC000'],
+                                [1, '#228B22']
+                            ],
+                        }
+                    },
+                }
+            ]
+        };
+
+        // Apply options
+        // ------------------------------
+
+        myGaugeChart.setOption(basicgaugeOptions);
+
+        // Resize chart
+        // ------------------------------
+
+        $(function () {
+
+            // Resize chart on menu width change and window resize
+            $(window).on('resize', resize);
+            $(".menu-toggle").on('click', resize);
+
+            // Resize function
+            function resize() {
+                setTimeout(function() {
+
+                    // Resize chart
+                    myGaugeChart.resize();
+                }, 200);
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        var chartDom = document.getElementById('main');
+        var myChart = echarts.init(customizedGaugePKPA);
+        var option;
+
+        option = {
+            series: [{
+                type: 'gauge',
+                startAngle: 180,
+                endAngle: 0,
+                min: 0,
+                max: 1,
+                splitNumber: 8,
+                axisLine: {
+                    lineStyle: {
+                        width: 6,
+                        color: [
+                            [0.25, '#FF4500'],
+                            [0.5, '#FFC000'],
+                            [0.75, '#4488BB'],
+                            [1, '#228B22']
+                        ]
+                    }
+                },
+                pointer: {
+                    icon: 'path://M12.8,0.7l12,40.1H0.7L12.8,0.7z',
+                    length: '30%',
+                    width: 5,
+                    offsetCenter: [0, '-60%'],
+                    itemStyle: {
+                        color: 'auto'
+                    }
+                },
+                axisTick: {
+                    length: 10,
+                    lineStyle: {
+                        color: 'auto',
+                        width: 2
+                    }
+                },
+                splitLine: {
+                    length: 20,
+                    lineStyle: {
+                        color: 'auto',
+                        width: 5
+                    }
+                },
+                axisLabel: {
+                    color: '#464646',
+                    fontSize: 12,
+                    distance: -40,
+                    formatter: function (value) {
+                        if (value === 1.00) {
+                            return '100%';
+                        }
+                        else if (value === 0.75) {
+                            return '75%';
+                        }
+                        else if (value === 0.50) {
+                            return '50%';
+                        }
+                        else if (value === 0.25) {
+                            return '25%';
+                        }
+                        else if (value === 0) {
+                            return '0%';
+                        }
+                    }
+                },
+                title: {
+                    offsetCenter: [0, '-40%'],
+                    fontSize: 15
+                },
+                detail: {
+                    fontSize: 20,
+                    offsetCenter: [0, '22%'],
+                    valueAnimation: true,
+                    formatter: function (value) {
+                        return Math.round(value * 100) + '%';
+                    },
+                    color: 'auto',
+                    formatter: '{value}%'
+                },
+                data: [{
+                    value: 99.14,
+                    name: 'PKPA'
+                }]
+            }]
+        };
+
+        option && myChart.setOption(option);
+    </script>
+
+    <script type="text/javascript">
+        var chartDom = document.getElementById('main');
+        var myChart = echarts.init(customizedGaugeIKPA);
+        var option;
+
+        option = {
+            series: [{
+                type: 'gauge',
+                startAngle: 180,
+                endAngle: 0,
+                min: 0,
+                max: 1,
+                splitNumber: 8,
+                axisLine: {
+                    lineStyle: {
+                        width: 6,
+                        color: [
+                            [0.25, '#FF4500'],
+                            [0.5, '#FFC000'],
+                            [0.75, '#4488BB'],
+                            [1, '#228B22']
+                        ]
+                    }
+                },
+                pointer: {
+                    icon: 'path://M12.8,0.7l12,40.1H0.7L12.8,0.7z',
+                    length: '30%',
+                    width: 5,
+                    offsetCenter: [0, '-60%'],
+                    itemStyle: {
+                        color: 'auto'
+                    }
+                },
+                axisTick: {
+                    length: 10,
+                    lineStyle: {
+                        color: 'auto',
+                        width: 2
+                    }
+                },
+                splitLine: {
+                    length: 20,
+                    lineStyle: {
+                        color: 'auto',
+                        width: 5
+                    }
+                },
+                axisLabel: {
+                    color: '#464646',
+                    fontSize: 12,
+                    distance: -40,
+                    formatter: function (value) {
+                        if (value === 1.00) {
+                            return '100%';
+                        }
+                        else if (value === 0.75) {
+                            return '75%';
+                        }
+                        else if (value === 0.50) {
+                            return '50%';
+                        }
+                        else if (value === 0.25) {
+                            return '25%';
+                        }
+                        else if (value === 0) {
+                            return '0%';
+                        }
+                    }
+                },
+                title: {
+                    offsetCenter: [0, '-40%'],
+                    fontSize: 15
+                },
+                detail: {
+                    fontSize: 20,
+                    offsetCenter: [0, '22%'],
+                    valueAnimation: true,
+                    formatter: function (value) {
+                        return Math.round(value * 100) + '%';
+                    },
+                    color: 'auto',
+                    formatter: '{value}%'
+                },
+                data: [{
+                    value: 99.14,
+                    name: 'IKPA'
+                }]
+            }]
+        };
+
+        option && myChart.setOption(option);
+    </script>
+
+    <script type="text/javascript">
+        var chartDom = document.getElementById('main');
+        var myChart = echarts.init(customizedGaugeSMART);
+        var option;
+
+        option = {
+            series: [{
+                type: 'gauge',
+                startAngle: 180,
+                endAngle: 0,
+                min: 0,
+                max: 1,
+                splitNumber: 8,
+                axisLine: {
+                    lineStyle: {
+                        width: 6,
+                        color: [
+                            [0.25, '#FF4500'],
+                            [0.5, '#FFC000'],
+                            [0.75, '#4488BB'],
+                            [1, '#228B22']
+                        ]
+                    }
+                },
+                pointer: {
+                    icon: 'path://M12.8,0.7l12,40.1H0.7L12.8,0.7z',
+                    length: '30%',
+                    width: 5,
+                    offsetCenter: [0, '-60%'],
+                    itemStyle: {
+                        color: 'auto'
+                    }
+                },
+                axisTick: {
+                    length: 10,
+                    lineStyle: {
+                        color: 'auto',
+                        width: 2
+                    }
+                },
+                splitLine: {
+                    length: 20,
+                    lineStyle: {
+                        color: 'auto',
+                        width: 5
+                    }
+                },
+                axisLabel: {
+                    color: '#464646',
+                    fontSize: 12,
+                    distance: -40,
+                    formatter: function (value) {
+                        if (value === 1.00) {
+                            return '100%';
+                        }
+                        else if (value === 0.75) {
+                            return '75%';
+                        }
+                        else if (value === 0.50) {
+                            return '50%';
+                        }
+                        else if (value === 0.25) {
+                            return '25%';
+                        }
+                        else if (value === 0) {
+                            return '0%';
+                        }
+                    }
+                },
+                title: {
+                    offsetCenter: [0, '-40%'],
+                    fontSize: 15
+                },
+                detail: {
+                    fontSize: 20,
+                    offsetCenter: [0, '22%'],
+                    valueAnimation: true,
+                    formatter: function (value) {
+                        return Math.round(value * 100) + '%';
+                    },
+                    color: 'auto',
+                    formatter: '{value}%'
+                },
+                data: [{
+                    value: 0.0,
+                    name: 'SMART'
+                }]
+            }]
+        };
+
+        option && myChart.setOption(option);
+    </script>
+
+    <script type="text/javascript">
+        // Initialize chart
+        // ------------------------------
+        var myBasicColumnChart = echarts.init(document.getElementById('saldo-kategori'));
+
+        // Chart Options
+        // ------------------------------
+        chartOptions = {
+
+            // Setup grid
+            grid: {
+                x: 55,
+                x2: 0,
+                y: 35,
+                y2: 30
+            },
+
+            // Add tooltip
+            tooltip: {
+                trigger: 'axis'
+            },
+
+            // Add legend
+            legend: {
+                data: ['LS Bendahara', 'Dropping', 'Pajak', 'TUP', 'UP', 'PNBP Umum', 'Total'],
+            },
+
+            // Add custom colors
+            //color: ['#689AD0', '#DF8244', '#5E803F', '#FFC000', '#660066', '#FF007F', '#606060'],
+            color: ['#CC6600', '#CCCC00', '#00CC00', '#00CCCC', '#6600CC', '#606060', '#CC0066'],
+
+            // Enable drag recalculate
+            calculable: true,
+
+            // Horizontal axis
+            xAxis: [{
+                type: 'category',
+                data: ['Kas\nBank', 'Kas\nTunai', 'Total']
+            }],
+
+            // Vertical axis
+            yAxis: [{
+                max: 600000,
+                min: 0,
+                interval: 100000,
+                type: 'value'
+            }],
+
+            // Add series
+            series: [
+                {
+                    name: 'LS Bendahara',
+                    type: 'bar',
+                    data: [37981, 757, 38738],
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true,
+                                position: 'outside',
+                                textStyle: {
+                                    fontWeight: 500
+                                }
+                            }
+                        }
+                    },
+                    // markLine: {
+                    //     data: [{type: 'average', name: 'Average'}]
+                    // }
+                },
+                {
+                    name: 'Dropping',
+                    type: 'bar',
+                    data: [355543, 1, 355544],
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true,
+                                position: 'outside',
+                                textStyle: {
+                                    fontWeight: 500
+                                }
+                            }
+                        }
+                    },
+                    // markLine: {
+                    //     data: [{type: 'average', name: 'Average'}]
+                    // }
+                },
+                {
+                    name: 'Pajak',
+                    type: 'bar',
+                    // data: [0, 37.52, 10.89, 5.72],
+                    data: [135, 6234, 6369],
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true,
+                                position: 'outside',
+                                textStyle: {
+                                    fontWeight: 500
+                                }
+                            }
+                        }
+                    },
+                    // markLine: {
+                    //     data: [{type: 'average', name: 'Average'}]
+                    // }
+                },
+                {
+                    name: 'TUP',
+                    type: 'bar',
+                    // data: [0, 31.23, 17.12, 8.97],
+                    data: [60179, 21868, 82047],
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true,
+                                position: 'outside',
+                                textStyle: {
+                                    fontWeight: 500
+                                }
+                            }
+                        }
+                    },
+                    // markLine: {
+                    //     data: [{type: 'average', name: 'Average'}]
+                    // }
+                },
+                {
+                    name: 'UP',
+                    type: 'bar',
+                    // data: [0, 31.23, 17.12, 8.97],
+                    data: [26283, 39484, 65768],
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true,
+                                position: 'outside',
+                                textStyle: {
+                                    fontWeight: 500
+                                }
+                            }
+                        }
+                    },
+                    // markLine: {
+                    //     data: [{type: 'average', name: 'Average'}]
+                    // }
+                },
+                {
+                    name: 'PNBP Umum',
+                    type: 'bar',
+                    // data: [0, 31.23, 17.12, 8.97],
+                    data: [0, 0, 0],
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true,
+                                position: 'outside',
+                                textStyle: {
+                                    fontWeight: 500
+                                }
+                            }
+                        }
+                    },
+                    // markLine: {
+                    //     data: [{type: 'average', name: 'Average'}]
+                    // }
+                },
+                {
+                    name: 'Total',
+                    type: 'bar',
+                    // data: [0, 31.23, 17.12, 8.97],
+                    data: [480121, 68344, 548466],
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true,
+                                position: 'outside',
+                                textStyle: {
+                                    fontWeight: 500
+                                }
+                            }
+                        }
+                    },
+                    // markLine: {
+                    //     data: [{type: 'average', name: 'Average'}]
+                    // }
+                },
+            ]
+        };
+
+        // Apply options
+        // ------------------------------
+
+        myBasicColumnChart.setOption(chartOptions);
+
+        // Resize chart
+        // ------------------------------
+
+        $(function () {
+
+            // Resize chart on menu width change and window resize
+            $(window).on('resize', resize);
+            $(".menu-toggle").on('click', resize);
+
+            // Resize function
+            function resize() {
+                setTimeout(function() {
+
+                    // Resize chart
+                    myBasicColumnChart.resize();
+                }, 200);
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        // Initialize chart
+        // ------------------------------
+        var myChart = echarts.init(document.getElementById('uang-di-bendahara'));
+
+        // Chart Options
+        // ------------------------------
+        chartOptions = {
+
+            // Add title
+            title: {
+                // text: 'Browser popularity',
+                // subtext: 'Open source information',
+                x: 'center'
+            },
+
+            // Add tooltip
+            tooltip: {
+                trigger: 'item',
+                // trigger: 'axis',
+                // formatter: "{a} <br/>{b}: {c} ({d}%)"
+            },
+
+            // Add legend
+            legend: {
+                orient: 'horizontal',
+                x: 'center',
+                // data: ['IE', 'Opera', 'Safari', 'Firefox', 'Chrome']
+                data: ['Kas Bank', 'Kas Tunai']
+            },
+
+            // Add custom colors
+            // color: ['#00A5A8', '#626E82', '#FF7D4D','#FF4558', '#28D094'],
+            color: ['#00CCCC', '#CCCC00'],
+
+            // Display toolbox
+            toolbox: {
+                show: true,
+                orient: 'vertical',
+                feature: {
+                    // mark: {
+                    //     show: true,
+                    //     title: {
+                    //         mark: 'Markline switch',
+                    //         markUndo: 'Undo markline',
+                    //         markClear: 'Clear markline'
+                    //     }
+                    // },
+                    // dataView: {
+                    //     show: true,
+                    //     readOnly: false,
+                    //     title: 'View data',
+                    //     lang: ['View chart data', 'Close', 'Update']
+                    // },
+                    // magicType: {
+                    //     show: true,
+                    //     title: {
+                    //         pie: 'Switch to pies',
+                    //         funnel: 'Switch to funnel',
+                    //     },
+                    //     type: ['pie', 'funnel'],
+                    //     option: {
+                    //         funnel: {
+                    //             x: '25%',
+                    //             y: '20%',
+                    //             width: '50%',
+                    //             height: '70%',
+                    //             funnelAlign: 'left',
+                    //             max: 1548
+                    //         }
+                    //     }
+                    // },
+                    // restore: {
+                    //     show: true,
+                    //     title: 'Restore'
+                    // },
+                    // saveAsImage: {
+                    //     show: true,
+                    //     title: 'Same as image',
+                    //     lang: ['Save']
+                    // }
+                }
+            },
+
+            // Enable drag recalculate
+            calculable: true,
+
+            // Add series
+            series: [{
+                name: 'Uang Dikelola Bendahara',
+                type: 'pie',
+                radius: '70%',
+                center: ['50%', '50%'],
+                itemStyle: {
+                    normal: {
+                        label: {
+                            show: true,
+                            position: 'outside',
+                            formatter: "{d}%",
+                            textStyle: {
+                                fontSize : '16',
+                            }
+                        }
+                    }
+                },
+                // itemStyle: {
+                //     normal: {
+                //         label : {
+                //             show: true,
+                //             position: 'inner',
+                //             formatter: "{d}%"
+                //         },
+                //         labelLine : {
+                //             show : false
+                //         }
+                //     },
+                //     emphasis : {
+                //         label : {
+                //             show : true,
+                //             position : 'center',
+                //             textStyle : {
+                //                 fontSize : '30',
+                //                 fontWeight : 'bold'
+                //             }
+                //         }
+                //     }
+                // },
+                data: [
+                    {value: 480121, name: 'Kas Bank'},
+                    {value: 68344, name: 'Kas Tunai'},
+                    // {value: 335, name: 'IE'},
+                    // {value: 310, name: 'Opera'},
+                    // {value: 234, name: 'Safari'},
+                    // {value: 135, name: 'Firefox'},
+                    // {value: 1548, name: 'Chrome'}
+                ],
+            }]
+        };
+
+        // Apply options
+        // ------------------------------
+
+        myChart.setOption(chartOptions);
+
+
+        // Resize chart
+        // ------------------------------
+
+        $(function () {
+
+            // Resize chart on menu width change and window resize
+            $(window).on('resize', resize);
+            $(".menu-toggle").on('click', resize);
+
+            // Resize function
+            function resize() {
+                setTimeout(function() {
+
+                    // Resize chart
+                    myChart.resize();
+                }, 200);
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        // Initialize chart
+        // ------------------------------
+        var myChart = echarts.init(document.getElementById('bmrt'));
+
+        // Chart Options
+        // ------------------------------
+        chartOptions = {
+
+            // Add title
+            title: {
+                // text: 'Browser popularity',
+                // subtext: 'Open source information',
+                x: 'center'
+            },
+
+            // Add tooltip
+            tooltip: {
+                trigger: 'item',
+                // formatter: "{a} <br/>{b}: {c} Paket (Rp{d}M)"
+                formatter: function (params) {
+      
+                    return `${params.seriesName}<br />
+                            ${params.name}: Rp${params.data.value1} M<br />
+                            ${params.data.value} item`;
+                }
+            },
+
+            // Add legend
+            legend: {
+                orient: 'horizontal',
+                x: 'center',
+                y: 'bottom',
+                // data: ['IE', 'Opera', 'Safari', 'Firefox', 'Chrome']
+                data: ['Proses Pengerjaan', 'Proses Lelang/Pengadaan', 'Ditunda', 'Persiapan Pengadaan', 'Selesai']
+            },
+
+            // Add custom colors
+            // color: ['#00A5A8', '#626E82', '#FF7D4D','#FF4558', '#28D094'],
+            color: ['#00BFFF', '#008B8B', '#FFA500', '#404040', '#1E90FF'],
+
+            // Display toolbox
+            toolbox: {
+                show: true,
+                orient: 'vertical',
+                feature: {
+                    // mark: {
+                    //     show: true,
+                    //     title: {
+                    //         mark: 'Markline switch',
+                    //         markUndo: 'Undo markline',
+                    //         markClear: 'Clear markline'
+                    //     }
+                    // },
+                    // dataView: {
+                    //     show: true,
+                    //     readOnly: false,
+                    //     title: 'View data',
+                    //     lang: ['View chart data', 'Close', 'Update']
+                    // },
+                    // magicType: {
+                    //     show: true,
+                    //     title: {
+                    //         pie: 'Switch to pies',
+                    //         funnel: 'Switch to funnel',
+                    //     },
+                    //     type: ['pie', 'funnel'],
+                    //     option: {
+                    //         funnel: {
+                    //             x: '25%',
+                    //             y: '20%',
+                    //             width: '50%',
+                    //             height: '70%',
+                    //             funnelAlign: 'left',
+                    //             max: 1548
+                    //         }
+                    //     }
+                    // },
+                    // restore: {
+                    //     show: true,
+                    //     title: 'Restore'
+                    // },
+                    // saveAsImage: {
+                    //     show: true,
+                    //     title: 'Same as image',
+                    //     lang: ['Save']
+                    // }
+                }
+            },
+
+            // Enable drag recalculate
+            calculable: true,
+
+            // Add series
+            series: [{
+                name: 'Belanja Modal Risiko Tinggi',
+                type: 'pie',
+                radius: '70%',
+                center: ['50%', '50%'],
+                itemStyle: {
+                    normal: {
+                        label: {
+                            show: true,
+                            position: 'outside',
+                            formatter : function (params){
+                                return  params.value + '\nPaket\n'
+                            },
+                            textStyle: {
+                                fontSize : '16',
+                            }
+                        }
+                    }
+                },
+                // itemStyle: {
+                //     normal: {
+                //         label : {
+                //             show: true,
+                //             position: 'inner',
+                //             formatter: "{d}%"
+                //         },
+                //         labelLine : {
+                //             show : false
+                //         }
+                //     },
+                //     emphasis : {
+                //         label : {
+                //             show : true,
+                //             position : 'center',
+                //             textStyle : {
+                //                 fontSize : '30',
+                //                 fontWeight : 'bold'
+                //             }
+                //         }
+                //     }
+                // },
+                data: [
+                    // {value: 124, name: 'Proses Pengerjaan'},
+                    // {value: 39, name: 'Proses Lelang/Pengadaan'},
+                    // {value: 29, name: 'Ditunda'},
+                    // {value: 46, name: 'Persiapan Pengadaan'},
+                    // {value: 9, name: 'Selesai'}
+                    {
+                        value: 124,
+                        name: 'Proses Pengerjaan',
+                        value1: 1141.63,
+                        // name1: 'xx'
+                    },
+                    {
+                        value: 39,
+                        name: 'Proses Lelang/Pengadaan',
+                        value1: 142.35,
+                        // name1: 'yy'
+                    },
+                    {
+                        value: 29,
+                        name: 'Ditunda',
+                        value1: 1.99,
+                        // name1: 'zz'
+                    },
+                    {
+                        value: 46,
+                        name: 'Persiapan Pengadaan',
+                        value1: 373.86,
+                        // name1: 'ww'
+                    },
+                    {
+                        value: 9,
+                        name: 'Selesai',
+                        value1: 16.92,
+                        // name1: 'vv'
+                    }
+                ],
+            }]
+        };
+
+        // Apply options
+        // ------------------------------
+
+        myChart.setOption(chartOptions);
+
+
+        // Resize chart
+        // ------------------------------
+
+        $(function () {
+
+            // Resize chart on menu width change and window resize
+            $(window).on('resize', resize);
+            $(".menu-toggle").on('click', resize);
+
+            // Resize function
+            function resize() {
+                setTimeout(function() {
+
+                    // Resize chart
+                    myChart.resize();
+                }, 200);
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        // Initialize chart
+        // ------------------------------
+        var myChart = echarts.init(document.getElementById('komposisi-jafung'));
+
+        // Chart Options
+        // ------------------------------
+        chartOptions = {
+
+            // Add title
+            title: {
+                // text: 'Browser popularity',
+                // subtext: 'Open source information',
+                x: 'center'
+            },
+
+            // Add tooltip
+            tooltip: {
+                trigger: 'item',
+                // formatter: "{a} <br/>{b}: {c} ({d}%)"
+            },
+
+            // Add legend
+            legend: {
+                orient: 'vertical',
+                x: 'right',
+                // data: ['IE', 'Opera', 'Safari', 'Firefox', 'Chrome']
+                data: ['Non Jafung', 'Jafung']
+            },
+
+            // Add custom colors
+            // color: ['#00A5A8', '#626E82', '#FF7D4D','#FF4558', '#28D094'],
+            color: ['#66B2FF', '#FF66FF'],
+
+            // Display toolbox
+            toolbox: {
+                show: true,
+                orient: 'vertical',
+                feature: {
+                }
+            },
+
+            // Enable drag recalculate
+            calculable: true,
+
+            // Add series
+            series: [{
+                name: 'Komposisi',
+                type: 'pie',
+                radius: '70%',
+                center: ['50%', '50%'],
+                itemStyle: {
+                    normal: {
+                        label: {
+                            show: true,
+                            position: 'outside',
+                            formatter: "{d}%",
+                            textStyle: {
+                                fontSize : '18',
+                            }
+                        }
+                    }
+                },
+                // itemStyle: {
+                //     normal: {
+                //         label : {
+                //             show: true,
+                //             position: 'inner',
+                //             formatter: "{d}%"
+                //         },
+                //         labelLine : {
+                //             show : false
+                //         }
+                //     },
+                //     emphasis : {
+                //         label : {
+                //             show : true,
+                //             position : 'center',
+                //             textStyle : {
+                //                 fontSize : '30',
+                //                 fontWeight : 'bold'
+                //             }
+                //         }
+                //     }
+                // },
+                data: [
+                    {value: 3740, name: 'Non Jafung'},
+                    {value: 789, name: 'Jafung'},
+                    // {value: 335, name: 'IE'},
+                    // {value: 310, name: 'Opera'},
+                    // {value: 234, name: 'Safari'},
+                    // {value: 135, name: 'Firefox'},
+                    // {value: 1548, name: 'Chrome'}
+                ],
+            }]
+        };
+
+        // Apply options
+        // ------------------------------
+
+        myChart.setOption(chartOptions);
+
+
+        // Resize chart
+        // ------------------------------
+
+        $(function () {
+
+            // Resize chart on menu width change and window resize
+            $(window).on('resize', resize);
+            $(".menu-toggle").on('click', resize);
+
+            // Resize function
+            function resize() {
+                setTimeout(function() {
+
+                    // Resize chart
+                    myChart.resize();
+                }, 200);
+            }
+        });
+    </script>
+    
+    <script type="text/javascript">
+        // Initialize chart
+        // ------------------------------
+        var myChart = echarts.init(document.getElementById('komposisi-jabatan'));
+
+        // Chart Options
+        // ------------------------------
+        chartOptions = {
+
+            // Add title
+            title: {
+                // text: 'Browser popularity',
+                // subtext: 'Open source information',
+                x: 'center'
+            },
+
+            // Add tooltip
+            tooltip: {
+                trigger: 'item',
+                // formatter: "{a} <br/>{b}: {c} ({d}%)"
+            },
+
+            // Add legend
+            legend: {
+                orient: 'vertical',
+                x: 'right',
+                // data: ['IE', 'Opera', 'Safari', 'Firefox', 'Chrome']
+                data: ['Bendahara', 'PPK', 'PPSPM', 'KPA', 'PPABP', 'Penyusunan SAI']
+            },
+
+            // Add custom colors
+            color: ['#FF6666', '#FFB266', '#6666FF','#66B2FF', '#FF66FF', '#B266FF'],
+            // color: ['#626E82', '#28D094'],
+
+            // Display toolbox
+            toolbox: {
+                show: true,
+                orient: 'vertical',
+                feature: {
+                }
+            },
+
+            // Enable drag recalculate
+            calculable: true,
+
+            // Add series
+            series: [{
+                name: 'Komposisi Pejabat Perbendaharaan',
+                type: 'pie',
+                radius: '70%',
+                center: ['50%', '50%'],
+                itemStyle: {
+                    normal: {
+                        label: {
+                            show: true,
+                            position: 'outside',
+                            formatter: "{d}%",
+                            textStyle: {
+                                fontSize : '16',
+                            }
+                        }
+                    }
+                },
+                // itemStyle: {
+                //     normal: {
+                //         label : {
+                //             show: true,
+                //             position: 'inner',
+                //             formatter: "{d}%"
+                //         },
+                //         labelLine : {
+                //             show : false
+                //         }
+                //     },
+                //     emphasis : {
+                //         label : {
+                //             show : true,
+                //             position : 'center',
+                //             textStyle : {
+                //                 fontSize : '30',
+                //                 fontWeight : 'bold'
+                //             }
+                //         }
+                //     }
+                // },
+                data: [
+                    {value: 1620, name: 'Bendahara'},
+                    {value: 702, name: 'PPK'},
+                    {value: 655, name: 'PPSPM'},
+                    {value: 653, name: 'KPA'},
+                    {value: 902, name: 'PPABP'},
+                    {value: 650, name: 'Penyusunan SAI'},
+                    // {value: 1548, name: 'Chrome'}
+                ],
+            }]
+        };
+
+        // Apply options
+        // ------------------------------
+
+        myChart.setOption(chartOptions);
+
+
+        // Resize chart
+        // ------------------------------
+
+        $(function () {
+
+            // Resize chart on menu width change and window resize
+            $(window).on('resize', resize);
+            $(".menu-toggle").on('click', resize);
+
+            // Resize function
+            function resize() {
+                setTimeout(function() {
+
+                    // Resize chart
+                    myChart.resize();
+                }, 200);
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        // Initialize chart
+        // ------------------------------
+        var myChart = echarts.init(document.getElementById('informasi-tukin'));
+
+        // Chart Options
+        // ------------------------------
+        chartOptions = {
+
+            // Add title
+            title: {
+                // text: 'Browser popularity',
+                // subtext: 'Open source information',
+                x: 'center'
+            },
+
+            // Add tooltip
+            tooltip: {
+                trigger: 'item',
+                // formatter: "{a} <br/>{b}: {c} ({d}%)"
+            },
+
+            // Add legend
+            legend: {
+                orient: 'horizontal',
+                x: 'center',
+                // data: ['IE', 'Opera', 'Safari', 'Firefox', 'Chrome']
+                data: ['Realisasi', 'Sisa Pagu']
+            },
+
+            // Add custom colors
+            // color: ['#00A5A8', '#626E82', '#FF7D4D','#FF4558', '#28D094'],
+            color: ['#00CC00', '#606060'],
+
+            // Display toolbox
+            toolbox: {
+                show: true,
+                orient: 'vertical',
+                feature: {
+                }
+            },
+
+            // Enable drag recalculate
+            calculable: true,
+
+            // Add series
+            series: [{
+                name: 'Informasi Tukin',
+                type: 'pie',
+                radius: '70%',
+                center: ['50%', '50%'],
+                itemStyle: {
+                    normal: {
+                        label: {
+                            show: true,
+                            position: 'outside',
+                            formatter: "{d}%",
+                            textStyle: {
+                                fontSize : '13',
+                            }
+                        }
+                    }
+                },
+                // itemStyle: {
+                //     normal: {
+                //         label : {
+                //             show: true,
+                //             position: 'inner',
+                //             formatter: "{d}%"
+                //         },
+                //         labelLine : {
+                //             show : false
+                //         }
+                //     },
+                //     emphasis : {
+                //         label : {
+                //             show : true,
+                //             position : 'center',
+                //             textStyle : {
+                //                 fontSize : '30',
+                //                 fontWeight : 'bold'
+                //             }
+                //         }
+                //     }
+                // },
+                data: [
+                    {value: 3000000000000, name: 'Realisasi'},
+                    {value: 10000000000000, name: 'Sisa Pagu'},
+                    // {value: 335, name: 'IE'},
+                    // {value: 310, name: 'Opera'},
+                    // {value: 234, name: 'Safari'},
+                    // {value: 135, name: 'Firefox'},
+                    // {value: 1548, name: 'Chrome'}
+                ],
+            }]
+        };
+
+        // Apply options
+        // ------------------------------
+
+        myChart.setOption(chartOptions);
+
+
+        // Resize chart
+        // ------------------------------
+
+        $(function () {
+
+            // Resize chart on menu width change and window resize
+            $(window).on('resize', resize);
+            $(".menu-toggle").on('click', resize);
+
+            // Resize function
+            function resize() {
+                setTimeout(function() {
+
+                    // Resize chart
+                    myChart.resize();
+                }, 200);
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        // Initialize chart
+        // ------------------------------
+        var myGaugeChart = echarts.init(document.getElementById('gauge-wilayah'));
+
+        // Chart Options
+        // ------------------------------
+        basicgaugeOptions = {
+
+            // Add tooltip
+            tooltip : {
+                formatter: "{a}{b} : {c}%"
+            },
+
+            // Add toolbox
+            toolbox: {
+                show : true,
+                // feature : {
+                //     mark : {show: true},
+                //     restore : {show: true},
+                //     saveAsImage : {show: true}
+                // }
+            },
+
+            // Enable drag recalculate
+            calculable: true,
+
+            // Add series
+            series : [
+                {
+                    name : 'PROPINSI ',
+                    type : 'gauge',
+                    detail : {
+                        formatter: '{value}%',
+                        offsetCenter: [0, '70%'],
+                        textStyle: {
+                            fontSize: 30,
+                            // color: '#F37B1D'
+                        },
+                        fontWeight: 'bolder',
+                        borderRadius: 3,
+                        backgroundColor: '#eee',
+                        borderColor: '#aaa',
+                        shadowBlur: 5,
+                        shadowColor: '#333',
+                        shadowOffsetX: 0,
+                        shadowOffsetY: 0,
+                        borderWidth: 2,
+                        textBorderColor: '#fff',
+                        textBorderWidth: 2,
+                        textShadowBlur: 2,
+                        textShadowColor: '#fff',
+                        textShadowOffsetX: 0,
+                        textShadowOffsetY: 0,
+                        fontFamily: 'Arial',
+                        width: 100,
+                        height: 25,
+                        color: 'auto',
+                        rich: {}
+                    },
+                    title : {
+                        offsetCenter: [0, '100%'],
+                        textStyle: {
+                            fontSize: 30,
+                            color: '#F37B1D'
+                        },
+                        shadowColor: '#fff', //默认透明
+                        shadowBlur: 10
+                    },
+                    axisLabel: {
+                        backgroundColor: 'auto',
+                        borderRadius: 2,
+                        color: '#fff',
+                        padding: 3,
+                        textShadowBlur: 2,
+                        textShadowOffsetX: 1,
+                        textShadowOffsetY: 1,
+                        textShadowColor: '#222'
+                    },
+                    data : [{
+                        value: ,
+                    }],
+                    axisLine: {
+                        lineStyle: {
+                            color: [
+                                [0.2, '#FF4500'],
+                                //[0.8, '#48b'],
+                                [0.8, '#FFC000'],
+                                [1, '#228B22']
+                            ],
+                        }
+                    },
+                }
+            ]
+        };
+
+        // Apply options
+        // ------------------------------
+
+        myGaugeChart.setOption(basicgaugeOptions);
+
+
+
+        // Resize chart
+        // ------------------------------
+
+        $(function () {
+
+            // Resize chart on menu width change and window resize
+            $(window).on('resize', resize);
+            $(".menu-toggle").on('click', resize);
+
+            // Resize function
+            function resize() {
+                setTimeout(function() {
+
+                    // Resize chart
+                    myGaugeChart.resize();
+                }, 200);
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+            // Initialize chart
+            // ------------------------------
+            var myColumnLineChart = echarts.init(document.getElementById('line-realisasi-rpd'));
+
+            // Chart Options
+            // ------------------------------
+            chartOptions = {
+
+                // Setup grid
+                grid: {
+                    x: 40,
+                    x2: 40,
+                    y: 45,
+                    y2: 25
+                },
+
+                // Add tooltip
+                tooltip: {
+                    trigger: 'axis'
+                },
+
+                // Add legend
+                legend: {
+                    // data: ['Belanja Pegawai', 'Belanja Barang', 'Belanja Modal', 'Total Belanja']
+                    // data: ['Belanja Pegawai', 'Belanja Barang', 'Belanja Modal']
+                    data: ['2018', '2019', '2020', '2021']
+                },
+
+                // Add custom colors
+                // color: ['#00A5A8', '#FF4558', '#FF7D4D'],
+                // color: ['#489FEC', '#F19659', '#64CD99', '#FF4558'],
+                // color: ['#489FEC', '#FF4558'],
+                color: ['#FFC000', '#5E803F', '#DF8244', '#689AD0'],
+
+                // Enable drag recalculate
+                calculable: true,
+
+                // Horizontal axis
+                xAxis: [{
+                    type: 'category',
+                    data: ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Agu', 'Sep', 'Okt', 'Nov', 'Des']
+                }],
+
+                // Vertical axis
+                yAxis : [
+                    {
+                        type : 'value',
+                        name : 'Persen',
+                        axisLabel : {
+                            formatter: '{value}'
+                        }
+                    }
+                ],
+
+                // Add series
+                series : [
+                    {
+                        name:'2021',
+                        type:'line',
+                        data: null,
+                        label: {
+                            normal: {
+                                show: true,
+                                position: 'top'
+                            }
+                        }
+                    },
+                    {
+                        name:'2020',
+                        type:'line',
+                        data: [4.16,7.35,13.84,18.93,22.59,38.24,43.87,48.14,63.35,70.57,77.58,94.46],
+                        label: {
+                            normal: {
+                                show: true,
+                                position: 'top'
+                            }
+                        }
+                    },
+                    {
+                        name:'2019',
+                        type:'line',
+                        data: [5.56,9.76,15.68,23.04,31.47,38.93,44.47,50.36,59.49,66.03,73.41,85.68],
+                        label: {
+                            normal: {
+                                show: true,
+                                position: 'top'
+                            }
+                        }
+                    },
+                    {
+                        name:'2018',
+                        type:'line',
+                        data: [4.6,8.1,17.74,22.56,32.12,40.57,48.41,55.65,62.81,68.78,75.05,84.89],
+                        label: {
+                            normal: {
+                                show: true,
+                                position: 'top'
+                            }
+                        }
+                    }
+                ]
+            };
+
+            // Apply options
+            // ------------------------------
+
+            myColumnLineChart.setOption(chartOptions);
+
+            // Resize chart
+            // ------------------------------
+
+            $(function () {
+
+                // Resize chart on menu width change and window resize
+                $(window).on('resize', resize);
+                $(".menu-toggle").on('click', resize);
+
+                // Resize function
+                function resize() {
+                    setTimeout(function() {
+
+                        // Resize chart
+                        myColumnLineChart.resize();
+                    }, 200);
+                }
+            });
+        </script>
+
+    <script type="text/javascript">
+        // Initialize chart
+        // ------------------------------
+        var myColumnLineChart = echarts.init(document.getElementById('line-only-with-blu'));
+
+        // Chart Options
+        // ------------------------------
+        chartOptions = {
+
+            // Setup grid
+            grid: {
+                x: 40,
+                x2: 40,
+                y: 45,
+                y2: 25
+            },
+
+            // Add tooltip
+            tooltip: {
+                trigger: 'axis'
+            },
+
+            // Add legend
+            legend: {
+                data: ['Belanja Pegawai', 'Belanja Barang', 'Belanja Modal', 'Total Belanja']
+                // data: ['Belanja Pegawai', 'Belanja Barang', 'Belanja Modal']
+            },
+
+            // Add custom colors
+            // color: ['#00A5A8', '#FF4558', '#FF7D4D'],
+            color: ['#489FEC', '#F19659', '#64CD99', '#FF4558'],
+
+            // Enable drag recalculate
+            calculable: true,
+
+            // Horizontal axis
+            xAxis: [{
+                type: 'category',
+                data: ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Ags', 'Sep', 'Okt', 'Nov', 'Des']
+            }],
+
+            // Vertical axis
+            yAxis : [
+                {
+                    type : 'value',
+                    name : 'Persen',
+                    axisLabel : {
+                        formatter: '{value}'
+                    }
+                }
+            ],
+
+            // Add series
+            series : [
+                {
+                    name:'Belanja Pegawai',
+                    type:'line',
+                    data: [9.97, 15.77, 21.63, 28.28, 39.90, 51.45, 63.61, 73.75, 80.36, 86.91, 93.99, 95.00]
+                },
+                {
+                    name:'Belanja Barang',
+                    type:'line',
+                    data: [1.37, 5.70, 9.90, 14.65, 20.70, 25.35, 30.03, 35.38, 42.28, 49.20, 55.59, 66.53]
+                },
+                {
+                    name:'Belanja Modal',
+                    type:'line',
+                    data: [0.28, 1.00, 2.98, 5.83, 8.70, 12.71, 18.00, 31.99, 37.30, 46.15, 57.30, 86.37]
+                },
+                {
+                    name:'Total Belanja',
+                    type:'line',
+                    data: [5.36, 10.24, 15.14, 20.74, 29.27, 37.13, 45.31, 53.27, 59.97, 66.78, 73.71, 82.91]
+                }
+            ]
+        };
+
+        // Apply options
+        // ------------------------------
+
+        myColumnLineChart.setOption(chartOptions);
+
+        // Resize chart
+        // ------------------------------
+
+        $(function () {
+
+            // Resize chart on menu width change and window resize
+            $(window).on('resize', resize);
+            $(".menu-toggle").on('click', resize);
+
+            // Resize function
+            function resize() {
+                setTimeout(function() {
+
+                    // Resize chart
+                    myColumnLineChart.resize();
+                }, 200);
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        // Initialize chart
+        // ------------------------------
+        var myColumnLineChart = echarts.init(document.getElementById('line-only-non-blu'));
+
+        // Chart Options
+        // ------------------------------
+        chartOptions = {
+
+            // Setup grid
+            grid: {
+                x: 40,
+                x2: 40,
+                y: 45,
+                y2: 25
+            },
+
+            // Add tooltip
+            tooltip: {
+                trigger: 'axis'
+            },
+
+            // Add legend
+            legend: {
+                data: ['Belanja Pegawai', 'Belanja Barang', 'Belanja Modal', 'Total Belanja']
+                // data: ['Belanja Pegawai', 'Belanja Barang', 'Belanja Modal']
+            },
+
+            // Add custom colors
+            // color: ['#00A5A8', '#FF4558', '#FF7D4D'],
+            color: ['#489FEC', '#F19659', '#64CD99', '#FF4558'],
+
+            // Enable drag recalculate
+            calculable: true,
+
+            // Horizontal axis
+            xAxis: [{
+                type: 'category',
+                data: ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Ags', 'Sep', 'Okt', 'Nov', 'Des']
+            }],
+
+            // Vertical axis
+            yAxis : [
+                {
+                    type : 'value',
+                    name : 'Persen',
+                    axisLabel : {
+                        formatter: '{value}'
+                    }
+                }
+            ],
+
+            // Add series
+            series : [
+                {
+                    name:'Belanja Pegawai',
+                    type:'line',
+                    data: [9.97, 15.77, 21.63, 28.28, 39.90, 51.45, 63.61, 73.75, 80.36, 86.91, 93.99, 99.64],
+                    label: {
+                        normal: {
+                            show: true,
+                            position: 'top'
+                        }
+                    }
+                },
+                {
+                    name:'Belanja Barang',
+                    type:'line',
+                    data: [1.30, 7.58, 13.57, 21.71, 32.68, 38.59, 45.26, 52.86, 62.12, 70.56, 79.23, 99.25]
+                },
+                {
+                    name:'Belanja Modal',
+                    type:'line',
+                    data: [0.15, 0.74, 2.58, 5.36, 8.18, 12.12, 17.41, 31.64, 37.03, 46.05, 57.42, 86.00]
+                },
+                {
+                    name:'Total Belanja',
+                    type:'line',
+                    data: [7.08, 12.73, 18.40, 25.28, 36.21, 45.82, 56.05, 65.75, 73.01, 80.18, 87.97, 95.00]
+                }
+            ]
+        };
+
+        // Apply options
+        // ------------------------------
+
+        myColumnLineChart.setOption(chartOptions);
+
+        // Resize chart
+        // ------------------------------
+
+        $(function () {
+
+            // Resize chart on menu width change and window resize
+            $(window).on('resize', resize);
+            $(".menu-toggle").on('click', resize);
+
+            // Resize function
+            function resize() {
+                setTimeout(function() {
+
+                    // Resize chart
+                    myColumnLineChart.resize();
+                }, 200);
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        // Initialize chart
+        // ------------------------------
+        var myColumnLineChart = echarts.init(document.getElementById('column-line'));
+
+        // Chart Options
+        // ------------------------------
+        chartOptions = {
+
+            // Setup grid
+            grid: {
+                x: 40,
+                x2: 40,
+                y: 45,
+                y2: 25
+            },
+
+            // Add tooltip
+            tooltip: {
+                trigger: 'axis'
+            },
+
+            // Add legend
+            legend: {
+                data: ['Pagu 2019', 'Pagu 2020', 'Pagu 2021', 'Real 2019', 'Real 2020', 'Real 2021']
+            },
+
+            // Add custom colors
+            color: ['#00A5A8', '#FF4558', '#FF7D4D'],
+
+            // Enable drag recalculate
+            calculable: true,
+
+            // Horizontal axis
+            xAxis: [{
+                type: 'category',
+                data: ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Ags', 'Sep', 'Okt', 'Nov', 'Des']
+            }],
+
+            // Vertical axis
+            yAxis : [
+                {
+                    type : 'value',
+                    name : 'Pagu',
+                    axisLabel : {
+                        formatter: '{value}'
+                    }
+                },
+                {
+                    type : 'value',
+                    name : 'Realisasi',
+                    axisLabel : {
+                        formatter: '{value}'
+                    }
+                }
+            ],
+
+            // Add series
+            series : [
+                {
+                    name:'Pagu 2019',
+                    type:'bar',
+                    data:,
+                },
+                {
+                    name:'Pagu 2020',
+                    type:'bar',
+                    data:                },
+                {
+                    name:'Pagu 2021',
+                    type:'bar',
+                    data:                },
+                {
+                    name:'Real 2019',
+                    type:'line',
+                    yAxisIndex: 1,
+                    data:                },
+                {
+                    name:'Real 2020',
+                    type:'line',
+                    yAxisIndex: 1,
+                    data:                },
+                {
+                    name:'Real 2021',
+                    type:'line',
+                    yAxisIndex: 1,
+                    data:                }
+            ]
+        };
+
+        // Apply options
+        // ------------------------------
+
+        myColumnLineChart.setOption(chartOptions);
+
+        // Resize chart
+        // ------------------------------
+
+        $(function () {
+
+            // Resize chart on menu width change and window resize
+            $(window).on('resize', resize);
+            $(".menu-toggle").on('click', resize);
+
+            // Resize function
+            function resize() {
+                setTimeout(function() {
+
+                    // Resize chart
+                    myColumnLineChart.resize();
+                }, 200);
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        // Initialize chart
+        // ------------------------------
+        var myStackedClusteredChart = echarts.init(document.getElementById('stacked-clustered-column'));
+
+        // Chart Options
+        // ------------------------------
+        chartOptions = {
+
+            // Setup grid
+            grid: {
+                x: 40,
+                x2: 20,
+                y: 70,
+                y2: 30
+            },
+
+            // Add tooltip
+            tooltip: {
+                trigger: 'axis'
+            },
+
+            // Add legend
+            legend: {
+                data: [
+                    'Realisasi s.d Desember 2017','Realisasi s.d Desember 2018','Realisasi s.d Desember 2019','',
+                    'Realisasi s.d Maret 2017','Realisasi s.d Maret 2018','Realisasi s.d Maret 2019'
+                ]
+            },
+
+            // Enable drag recalculate
+            calculable: true,
+
+            // Horizontal axis
+            xAxis: [{
+                type : 'category',
+                data: ['SETJEN','ITJEN','DJA','DJP','DJBC','DJPK','DJPPR','DJPB','DJKN','BPPK','BKF','LNSW']
+            },
+            {
+                type : 'category',
+                axisLine: {show:false},
+                axisTick: {show:false},
+                axisLabel: {show:false},
+                splitArea: {show:false},
+                splitLine: {show:false},
+                data: ['SETJEN','ITJEN','DJA','DJP','DJBC','DJPK','DJPPR','DJPB','DJKN','BPPK','BKF','LNSW']
+            }
+            ],
+
+            // Vertical axis
+            yAxis: [{
+                type : 'value',
+                axisLabel:{formatter:'{value} %'}
+            }],
+
+            // Add series
+            series : [
+                {
+                    name:'Realisasi s.d Maret 2017',
+                    type:'bar',
+                    itemStyle: {normal: {color:'rgba(22,211,154,1)', label:{show:true}}},
+                    data:[21,13,13,14, 10]
+                },
+                {
+                    name:'Realisasi s.d Maret 2018',
+                    type:'bar',
+                    itemStyle: {normal: {color:'rgba(45,206,227,1)', label:{show:true,textStyle:{color:'#27727B'}}}},
+                    data:[21,12,14,13,10]
+                },
+                {
+                    name:'Realisasi s.d Maret 2019',
+                    type:'bar',
+                    itemStyle: {normal: {color:'rgba(249,142,118,1)', label:{show:true,textStyle:{color:'#E87C25'}}}},
+                    data:[23,15,18,16,15]
+                },
+                {
+                    name:'Realisasi s.d Desember 2017',
+                    type:'bar',
+                    xAxisIndex:1,
+                    itemStyle: {normal: {color:'rgba(22,211,154,0.7)', label:{show:true,formatter:function(p){return p.value > 0 ? (p.value +'\n'):'';}}}},
+                    data:[95,86,87,96,92]
+                },
+                /*
+                {
+                    name:'Realisasi s.d Desember 2017',
+                    type:'bar',
+                    xAxisIndex:1,
+                    itemStyle: {normal: {color:'rgba(22,211,154,0.7)', label:{show:true,formatter:function(p){return p.value > 0 ? (p.value +'\n'):'';}}}},
+                    data:[95,86,87,96,92]
+                },
+                */
+                {
+                    name:'Realisasi s.d Desember 2018',
+                    type:'bar',
+                    xAxisIndex:1,
+                    itemStyle: {normal: {color:'rgba(45,206,227,0.7)', label:{show:true}}},
+                    data:[95,88,86,91,93]
+                },
+                {
+                    name:'Realisasi s.d Desember 2019',
+                    type:'bar',
+                    xAxisIndex:1,
+                    itemStyle: {normal: {color:'rgba(249,142,118,0.7)', label:{show:true,formatter:function(p){return p.value > 0 ? (p.value +''):'';}}}},
+                    data:[95,95,95,95,95]
+                }
+            ]
+        };
+
+        // Apply options
+        // ------------------------------
+
+        myStackedClusteredChart.setOption(chartOptions);
+
+        // Resize chart
+        // ------------------------------
+
+        $(function () {
+
+            // Resize chart on menu width change and window resize
+            $(window).on('resize', resize);
+            $(".menu-toggle").on('click', resize);
+
+            // Resize function
+            function resize() {
+                setTimeout(function() {
+
+                    // Resize chart
+                    myStackedClusteredChart.resize();
+                }, 200);
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        // Initialize chart
+        // ------------------------------
+        var myStackedBarChart = echarts.init(document.getElementById('stacked-bar'));
+
+        // Chart Options
+        // ------------------------------
+        chartOptions = {
+
+            // Setup grid
+            grid: {
+                x: 40,
+                x2: 40,
+                y: 45,
+                y2: 25
+            },
+
+            // Add tooltip
+            tooltip : {
+                trigger: 'axis',
+                axisPointer : {            // Axis indicator axis trigger effective
+                    type : 'shadow'        // The default is a straight line, optionally: 'line' | 'shadow'
+                },
+                // formatter : '{b}<br/>{a0}:{c0}%<br/>{a2}:{c2}%<br/>{a4}:{c4}%<br/>{a6}:{c6}%'
+            },
+
+            // Add legend
+            legend: {
+                data: ['Realisasi s.d Juli', 'Realisasi s.d Desember']
+            },
+
+            // Add custom colors
+            color: ['#666EE8', '#FF9149', '#FF4961', '#2D2E4F', '#98A4B8'],
+
+            // Horizontal axis
+            xAxis: [ {
+                    type: 'category',
+                    data: ['SETJEN','ITJEN','DJA','DJP','DJBC','DJPK','DJPPR','DJPB','DJKN','BPPK','BKF','LNSW']
+                }
+            ],
+
+            // Vertical axis
+            yAxis: [ {
+                    type: 'value'
+                }
+            ],
+
+            // Add series
+            series: [
+                {
+                    name: 'Realisasi s.d Juli',
+                    type: 'bar',
+                    stack: '2017',
+                    // label: {
+                    //     normal: {
+                    //         show: true,
+                    //         position: 'insideRight'
+                    //     }
+                    // },
+                    itemStyle : { normal: {label : {show: true, position: 'insideRight'}}},
+                    data: [53.34, 42.87, 42.86, 49.73, 37.31, 31.25, 50.29, 53.24, 34.42, 36.59, 39.91]
+                },
+                {
+                    name: 'Realisasi s.d Desember',
+                    type: 'bar',
+                    stack: '2017',
+                    // label: {
+                    //     normal: {
+                    //         show: true,
+                    //         position: 'insideRight'
+                    //     }
+                    // },
+                    itemStyle : { normal: {label : {show: true, position: 'insideRight'}}},
+                    data: [95, 86, 87, 96, 92, 85, 93, 94, 81, 89, 85]
+                },
+                {
+                    name: 'Realisasi s.d Juli',
+                    type: 'bar',
+                    stack: '2018',
+                    // label: {
+                    //     normal: {
+                    //         show: true,
+                    //         position: 'insideRight'
+                    //     }
+                    // },
+                    itemStyle : { normal: {label : {show: true, position: 'insideRight'}}},
+                    data: [59.69, 38.14, 39.02, 44.61, 38.75, 37.24, 43.45, 36.89, 39.88, 37.18, 35.46]
+                },
+                {
+                    name: 'Realisasi s.d Desember',
+                    type: 'bar',
+                    stack: '2018',
+                    // label: {
+                    //     normal: {
+                    //         show: true,
+                    //         position: 'insideRight'
+                    //     }
+                    // },
+                    itemStyle : { normal: {label : {show: true, position: 'insideRight'}}},
+                    data: [95, 88, 86, 91, 93, 86, 93, 63, 85, 88, 81]
+                },
+                {
+                    name: 'Realisasi s.d Juli',
+                    type: 'bar',
+                    stack: '2019',
+                    // label: {
+                    //     normal: {
+                    //         show: true,
+                    //         position: 'insideRight'
+                    //     }
+                    // },
+                    itemStyle : { normal: {label : {show: true, position: 'insideRight'}}},
+                    data: [64.90, 62.48, 61.30, 53.30, 57.19, 50.52, 48.58, 12.22, 52.72, 48.85, 54.51, 17.59]
+                },
+                {
+                    name: 'Realisasi s.d Desember',
+                    type: 'bar',
+                    stack: '2019',
+                    // label: {
+                    //     normal: {
+                    //         show: true,
+                    //         position: 'insideRight'
+                    //     }
+                    // },
+                    itemStyle : { normal: {label : {show: true, position: 'insideRight'}}},
+                    data: [95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95]
+                }
+            ]
+        };
+
+        // Apply options
+        // ------------------------------
+
+        myStackedBarChart.setOption(chartOptions);
+
+        // Resize chart
+        // ------------------------------
+
+        $(function () {
+
+            // Resize chart on menu width change and window resize
+            $(window).on('resize', resize);
+            $(".menu-toggle").on('click', resize);
+
+            // Resize function
+            function resize() {
+                setTimeout(function() {
+
+                    // Resize chart
+                    myStackedBarChart.resize();
+                }, 200);
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        // Initialize chart
+        // ------------------------------
+        var myColumnLineChart = echarts.init(document.getElementById('column-line-se'));
+
+        // Chart Options
+        // ------------------------------
+        chartOptions = {
+
+            // Setup grid
+            grid: {
+                x: 40,
+                x2: 40,
+                y: 45,
+                y2: 25
+            },
+
+            // Add tooltip
+            tooltip: {
+                trigger: 'axis'
+            },
+
+            // Add legend
+            legend: {
+                data: ['TW I', 'TW II', 's.d TW II']
+            },
+
+            // Add custom colors
+            color: ['#00A5A8', '#FF4558', '#FF7D4D'],
+
+            // Enable drag recalculate
+            calculable: true,
+
+            // Horizontal axis
+            xAxis: [{
+                type: 'category',
+                data: ['SETJEN', 'ITJEN', 'DJA', 'DJP', 'DJBC', 'DJPB', 'DJKN', 'DJPPR', 'DJPK', 'BKF', 'BPPK', 'LNSW', 'BA-015']
+            }],
+
+            // Vertical axis
+            yAxis : [
+                {
+                    max: 100,
+                    min: 80,
+                    interval: 2,
+                    type : 'value',
+                    // name : 'TW I',
+                    axisLabel : {
+                        formatter: '{value}'
+                    }
+                }
+            ],
+
+            // Add series
+            series : [
+                {
+                    name:'TW I',
+                    type:'bar',
+                    data:[90.97, 88.4, 96.03, 95.11, 94.78, 95.86, 96.07, 93.78, 95.47, 93.42, 97.15, 85.57, 93.23]
+                },
+                {
+                    name:'TW II',
+                    type:'bar',
+                    data:[94.79, 98.74, 97.43, 91.54, 95.22, 95.68, 95.79, 92.93, 94.97, 92.27, 97.22, 97.97, 94.66]
+                },
+                {
+                    name:'s.d TW II',
+                    type:'line',
+                    data:[93, 94, 97, 93.27, 95, 95.68, 95.79, 92.93, 94.97, 92.27, 97.22, 97.97, 94.66]
+                }
+            ]
+        };
+
+        // Apply options
+        // ------------------------------
+
+        myColumnLineChart.setOption(chartOptions);
+
+        // Resize chart
+        // ------------------------------
+
+        $(function () {
+
+            // Resize chart on menu width change and window resize
+            $(window).on('resize', resize);
+            $(".menu-toggle").on('click', resize);
+
+            // Resize function
+            function resize() {
+                setTimeout(function() {
+
+                    // Resize chart
+                    myColumnLineChart.resize();
+                }, 200);
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        // Initialize chart
+        // ------------------------------
+        var myBasicColumnChart = echarts.init(document.getElementById('basic-column'));
+
+        // Chart Options
+        // ------------------------------
+        chartOptions = {
+
+            // Setup grid
+            grid: {
+                x: 40,
+                x2: 40,
+                y: 35,
+                y2: 35
+            },
+
+            // Add tooltip
+            tooltip: {
+                trigger: 'axis'
+            },
+
+            // Add legend
+            legend: {
+                data: ['2018', '2019', '2020', '2021'],
+                // data: ['2020', '2021'],
+            },
+
+            // Add custom colors
+            color: ['#689AD0', '#DF8244', '#5E803F', '#FFC000'],
+            // color: ['#5E803F', '#DF8244'],
+
+            // Enable drag recalculate
+            calculable: true,
+
+            // Horizontal axis
+            xAxis: [{
+                type: 'category',
+                // data: ['Total\nKemenkeu', 'Belanja\nPegawai', 'Belanja\nBarang', 'Belanja\nModal']
+                data: ['Belanja\nPegawai', 'Belanja\nBarang', 'Belanja\nModal']
+            }],
+
+            // Vertical axis
+            yAxis: [{
+                max: 100,
+                min: 0,
+                interval: 20,
+                type: 'value'
+            }],
+
+            // Add series
+            series: [
+                {
+                    name: '2018',
+                    type: 'bar',
+                    data: [40.42,27.37,6.14],
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true,
+                                position: 'outside',
+                                textStyle: {
+                                    fontWeight: 500
+                                }
+                            }
+                        }
+                    },
+                    // markLine: {
+                    //     data: [{type: 'average', name: 'Average'}]
+                    // }
+                },
+                {
+                    name: '2019',
+                    type: 'bar',
+                    data: [50.16,15.64,8.22],
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true,
+                                position: 'outside',
+                                textStyle: {
+                                    fontWeight: 500
+                                }
+                            }
+                        }
+                    },
+                    // markLine: {
+                    //     data: [{type: 'average', name: 'Average'}]
+                    // }
+                },
+                {
+                    name: '2020',
+                    type: 'bar',
+                    // data: [0, 37.52, 10.89, 5.72],
+                    data: [48.11,9.96,23.6],
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true,
+                                position: 'outside',
+                                textStyle: {
+                                    fontWeight: 500
+                                }
+                            }
+                        }
+                    },
+                    // markLine: {
+                    //     data: [{type: 'average', name: 'Average'}]
+                    // }
+                },
+                {
+                    name: '2021',
+                    type: 'bar',
+                    // data: [0, 31.23, 17.12, 8.97],
+                    data: [40.62,42.78,7.33],
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true,
+                                position: 'outside',
+                                textStyle: {
+                                    fontWeight: 500
+                                }
+                            }
+                        }
+                    },
+                    // markLine: {
+                    //     data: [{type: 'average', name: 'Average'}]
+                    // }
+                },
+            ]
+        };
+
+        // Apply options
+        // ------------------------------
+
+        myBasicColumnChart.setOption(chartOptions);
+
+        // Resize chart
+        // ------------------------------
+
+        $(function () {
+
+            // Resize chart on menu width change and window resize
+            $(window).on('resize', resize);
+            $(".menu-toggle").on('click', resize);
+
+            // Resize function
+            function resize() {
+                setTimeout(function() {
+
+                    // Resize chart
+                    myBasicColumnChart.resize();
+                }, 200);
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        // Initialize chart
+        // ------------------------------
+        var myBasicColumnChart = echarts.init(document.getElementById('basic4-column'));
+
+        // Chart Options
+        // ------------------------------
+        chartOptions = {
+
+            // Setup grid
+            grid: {
+                x: 90,
+                x2: 0,
+                y: 5,
+                y2: 20
+            },
+
+            // Add tooltip
+            tooltip: {
+                trigger: 'axis'
+            },
+
+            // Add custom colors
+            color: ['#00A5A8', '#FF4558'],
+            // color: ['#588C7E', '#F2E394', '#F2AE72'],
+
+            // Enable drag recalculate
+            calculable: true,
+
+            // Horizontal axis
+            xAxis: [{
+                type: 'category',
+                data: ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Agu', 'Sep', 'Okt', 'Nov', 'Des']
+            }],
+
+            // Vertical axis
+            yAxis: [{
+                type: 'value'
+            }],
+
+            // Add series
+            series: [
+                {
+                    name: 'RDK dan Konsinyering',
+                    type: 'bar',
+                    data: ,
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true,
+                                position: 'outside',
+                                textStyle: {
+                                    fontWeight: 500
+                                }
+                            }
+                        }
+                    },
+                    // markLine: {
+                    //     data: [{type: 'average', name: 'Average'}]
+                    // }
+                }
+            ]
+        };
+
+        // Apply options
+        // ------------------------------
+
+        myBasicColumnChart.setOption(chartOptions);
+
+        // Resize chart
+        // ------------------------------
+
+        $(function () {
+
+            // Resize chart on menu width change and window resize
+            $(window).on('resize', resize);
+            $(".menu-toggle").on('click', resize);
+
+            // Resize function
+            function resize() {
+                setTimeout(function() {
+
+                    // Resize chart
+                    myBasicColumnChart.resize();
+                }, 200);
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        // Initialize chart
+        // ------------------------------
+        var myBasicColumnChart = echarts.init(document.getElementById('basic5-column'));
+
+        // Chart Options
+        // ------------------------------
+        chartOptions = {
+
+            // Setup grid
+            grid: {
+                x: 90,
+                x2: 0,
+                y: 5,
+                y2: 20
+            },
+
+            // Add tooltip
+            tooltip: {
+                trigger: 'axis'
+            },
+
+            // Add custom colors
+            color: ['#00A5A8', '#FF4558'],
+            // color: ['#588C7E', '#F2E394', '#F2AE72'],
+
+            // Enable drag recalculate
+            calculable: true,
+
+            // Horizontal axis
+            xAxis: [{
+                type: 'category',
+                data: ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Agu', 'Sep', 'Okt', 'Nov', 'Des']
+            }],
+
+            // Vertical axis
+            yAxis: [{
+                type: 'value'
+            }],
+
+            // Add series
+            series: [
+                {
+                    name: 'Perjadin Luar Negeri',
+                    type: 'bar',
+                    data: ,
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true,
+                                position: 'outside',
+                                textStyle: {
+                                    fontWeight: 500
+                                },
+                            }
+                        }
+                    },
+                }
+            ]
+        };
+
+        // Apply options
+        // ------------------------------
+
+        myBasicColumnChart.setOption(chartOptions);
+
+        // Resize chart
+        // ------------------------------
+
+        $(function () {
+
+            // Resize chart on menu width change and window resize
+            $(window).on('resize', resize);
+            $(".menu-toggle").on('click', resize);
+
+            // Resize function
+            function resize() {
+                setTimeout(function() {
+
+                    // Resize chart
+                    myBasicColumnChart.resize();
+                }, 200);
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        // Initialize chart
+        // ------------------------------
+        var myBasicColumnChart = echarts.init(document.getElementById('basic6-column'));
+
+        // Chart Options
+        // ------------------------------
+        chartOptions = {
+
+            // Setup grid
+            grid: {
+                x: 100,
+                x2: 0,
+                y: 5,
+                y2: 20
+            },
+
+            // Add tooltip
+            tooltip: {
+                trigger: 'axis'
+            },
+
+            // Add custom colors
+            color: ['#00A5A8', '#FF4558'],
+            // color: ['#588C7E', '#F2E394', '#F2AE72'],
+
+            // Enable drag recalculate
+            calculable: true,
+
+            // Horizontal axis
+            xAxis: [{
+                type: 'category',
+                data: ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Agu', 'Sep', 'Okt', 'Nov', 'Des']
+            }],
+
+            // Vertical axis
+            yAxis: [{
+                type: 'value'
+            }],
+
+            // Add series
+            series: [
+                {
+                    name: 'Perjadin Dalam Negeri',
+                    type: 'bar',
+                    data: ,
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true,
+                                position: 'outside',
+                                textStyle: {
+                                    fontWeight: 500
+                                },
+                            }
+                        }
+                    },
+                }
+            ]
+        };
+
+        // Apply options
+        // ------------------------------
+
+        myBasicColumnChart.setOption(chartOptions);
+
+        // Resize chart
+        // ------------------------------
+
+        $(function () {
+
+            // Resize chart on menu width change and window resize
+            $(window).on('resize', resize);
+            $(".menu-toggle").on('click', resize);
+
+            // Resize function
+            function resize() {
+                setTimeout(function() {
+
+                    // Resize chart
+                    myBasicColumnChart.resize();
+                }, 200);
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        // Initialize chart
+        // ------------------------------
+        var myBasicColumnChart = echarts.init(document.getElementById('basic7-column'));
+
+        // Chart Options
+        // ------------------------------
+        chartOptions = {
+
+            // Setup grid
+            grid: {
+                x: 90,
+                x2: 0,
+                y: 5,
+                y2: 20
+            },
+
+            // Add tooltip
+            tooltip: {
+                trigger: 'axis'
+            },
+
+            // Add custom colors
+            color: ['#00A5A8', '#FF4558'],
+            // color: ['#588C7E', '#F2E394', '#F2AE72'],
+
+            // Enable drag recalculate
+            calculable: true,
+
+            // Horizontal axis
+            xAxis: [{
+                type: 'category',
+                data: ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Agu', 'Sep', 'Okt', 'Nov', 'Des']
+            }],
+
+            // Vertical axis
+            yAxis: [{
+                type: 'value'
+            }],
+
+            // Add series
+            series: [
+                {
+                    name: 'Honorarium',
+                    type: 'bar',
+                    data: ,
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true,
+                                position: 'outside',
+                                textStyle: {
+                                    fontWeight: 500
+                                },
+                            }
+                        }
+                    },
+                }
+            ]
+        };
+
+        // Apply options
+        // ------------------------------
+
+        myBasicColumnChart.setOption(chartOptions);
+
+        // Resize chart
+        // ------------------------------
+
+        $(function () {
+
+            // Resize chart on menu width change and window resize
+            $(window).on('resize', resize);
+            $(".menu-toggle").on('click', resize);
+
+            // Resize function
+            function resize() {
+                setTimeout(function() {
+
+                    // Resize chart
+                    myBasicColumnChart.resize();
+                }, 200);
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        // Initialize chart
+        // ------------------------------
+        var myBasicColumnChart = echarts.init(document.getElementById('basic8-column'));
+
+        // Chart Options
+        // ------------------------------
+        chartOptions = {
+
+            // Setup grid
+            grid: {
+                x: 90,
+                x2: 0,
+                y: 10,
+                y2: 20
+            },
+
+            // Add tooltip
+            tooltip: {
+                trigger: 'axis'
+            },
+
+            // Add custom colors
+            color: ['#00A5A8', '#FF4558'],
+            // color: ['#588C7E', '#F2E394', '#F2AE72'],
+
+            // Enable drag recalculate
+            calculable: true,
+
+            // Horizontal axis
+            xAxis: [{
+                type: 'category',
+                data: ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Agu', 'Sep', 'Okt', 'Nov', 'Des']
+            }],
+
+            // Vertical axis
+            yAxis: [{
+                type: 'value'
+            }],
+
+            // Add series
+            series: [
+                {
+                    name: 'Belanja Bahan, Percetakan, dan Konsumsi',
+                    type: 'bar',
+                    data: ,
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true,
+                                position: 'outside',
+                                textStyle: {
+                                    fontWeight: 500
+                                },
+                            }
+                        }
+                    },
+                }
+            ]
+        };
+
+        // Apply options
+        // ------------------------------
+
+        myBasicColumnChart.setOption(chartOptions);
+
+        // Resize chart
+        // ------------------------------
+
+        $(function () {
+
+            // Resize chart on menu width change and window resize
+            $(window).on('resize', resize);
+            $(".menu-toggle").on('click', resize);
+
+            // Resize function
+            function resize() {
+                setTimeout(function() {
+
+                    // Resize chart
+                    myBasicColumnChart.resize();
+                }, 200);
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        // Initialize chart
+        // ------------------------------
+        var myBasicColumnChart = echarts.init(document.getElementById('basic2-column'));
+
+        // Chart Options
+        // ------------------------------
+        chartOptions = {
+
+            // Setup grid
+            grid: {
+                x: 40,
+                x2: 40,
+                y: 35,
+                y2: 25
+            },
+
+            // Add tooltip
+            tooltip: {
+                trigger: 'axis'
+            },
+
+            // Add legend
+            legend: {
+                data: ['Realisasi Maret s.d. 15 Juni TA 2019', 'Realisasi Maret s.d. 15 Juni TA 2020']
+            },
+
+            // Add custom colors
+            color: ['#00A5A8', '#FF4558'],
+            // color: ['#588C7E', '#F2E394', '#F2AE72'],
+
+            // Enable drag recalculate
+            calculable: true,
+
+            // Horizontal axis
+            xAxis: [{
+                type: 'category',
+                data: ['SETJEN', 'ITJEN', 'DJA', 'DJP', 'DJBC', 'DJPK', 'DJPPR', 'DJPB', 'DJKN', 'BPPK', 'BKF', 'LNSW']
+            }],
+
+            // Vertical axis
+            yAxis: [{
+                max: 300,
+                min: 0,
+                interval: 50,
+                type: 'value'
+            }],
+
+            // Add series
+            series: [
+                {
+                    name: 'Realisasi Maret s.d. 15 Juni TA 2019',
+                    type: 'bar',
+                    data: [35.55, 7.25, 7.49, 237.08, 94.70, 8.57, 7.10, 61.71, 22.20, 45.23, 12.18, 0.67],
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true,
+                                position: 'outside',
+                                textStyle: {
+                                    fontWeight: 500
+                                }
+                            }
+                        }
+                    },
+                    // markLine: {
+                    //     data: [{type: 'average', name: 'Average'}]
+                    // }
+                },
+                {
+                    name: 'Realisasi Maret s.d. 15 Juni TA 2020',
+                    type: 'bar',
+                    data: [11.61, 1.26, 4.12, 89.15, 59.85, 2.29, 2.24, 23.35, 9.10, 14.25, 2.19, 0.13],
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true,
+                                position: 'outside',
+                                textStyle: {
+                                    fontWeight: 500
+                                }
+                            }
+                        }
+                    },
+                    // markLine: {
+                    //     data: [{type: 'average', name: 'Average'}]
+                    // }
+                },
+            ]
+        };
+
+        // Apply options
+        // ------------------------------
+
+        myBasicColumnChart.setOption(chartOptions);
+
+        // Resize chart
+        // ------------------------------
+
+        $(function () {
+
+            // Resize chart on menu width change and window resize
+            $(window).on('resize', resize);
+            $(".menu-toggle").on('click', resize);
+
+            // Resize function
+            function resize() {
+                setTimeout(function() {
+
+                    // Resize chart
+                    myBasicColumnChart.resize();
+                }, 200);
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        // Initialize chart
+        // ------------------------------
+        var myBasicColumnChart = echarts.init(document.getElementById('basic3-column'));
+
+        // Chart Options
+        // ------------------------------
+        chartOptions = {
+
+            // Setup grid
+            grid: {
+                x: 40,
+                x2: 40,
+                y: 35,
+                y2: 25
+            },
+
+            // Add tooltip
+            tooltip: {
+                trigger: 'axis'
+            },
+
+            // Add legend
+            legend: {
+                data: ['Realisasi Maret s.d. 15 Juni TA 2019', 'Realisasi Maret s.d. 15 Juni TA 2020']
+            },
+
+            // Add custom colors
+            color: ['#00A5A8', '#FF4558'],
+            // color: ['#588C7E', '#F2E394', '#F2AE72'],
+
+            // Enable drag recalculate
+            calculable: true,
+
+            // Horizontal axis
+            xAxis: [{
+                type: 'category',
+                data: ['SETJEN', 'ITJEN', 'DJA', 'DJP', 'DJBC', 'DJPK', 'DJPPR', 'DJPB', 'DJKN', 'BPPK', 'BKF', 'LNSW']
+            }],
+
+            // Vertical axis
+            yAxis: [{
+                max: 700,
+                min: 0,
+                interval: 100,
+                type: 'value'
+            }],
+
+            // Add series
+            series: [
+                {
+                    name: 'Realisasi Maret s.d. 15 Juni TA 2019',
+                    type: 'bar',
+                    data: [183.26, 4.73, 4.82, 580.66, 208.09, 4.15, 4.97, 108.67, 47.34, 25.45, 6.52, 0.91],
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true,
+                                position: 'outside',
+                                textStyle: {
+                                    fontWeight: 500
+                                }
+                            }
+                        }
+                    },
+                    // markLine: {
+                    //     data: [{type: 'average', name: 'Average'}]
+                    // }
+                },
+                {
+                    name: 'Realisasi Maret s.d. 15 Juni TA 2020',
+                    type: 'bar',
+                    data: [143.67, 4.66, 4.15, 488.22, 189.02, 3.41, 3.57, 101.87, 43.11, 24.41, 5.06, 1.08],
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true,
+                                position: 'outside',
+                                textStyle: {
+                                    fontWeight: 500
+                                }
+                            }
+                        }
+                    },
+                    // markLine: {
+                    //     data: [{type: 'average', name: 'Average'}]
+                    // }
+                },
+            ]
+        };
+
+        // Apply options
+        // ------------------------------
+
+        myBasicColumnChart.setOption(chartOptions);
+
+        // Resize chart
+        // ------------------------------
+
+        $(function () {
+
+            // Resize chart on menu width change and window resize
+            $(window).on('resize', resize);
+            $(".menu-toggle").on('click', resize);
+
+            // Resize function
+            function resize() {
+                setTimeout(function() {
+
+                    // Resize chart
+                    myBasicColumnChart.resize();
+                }, 200);
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        // Initialize chart
+        // ------------------------------
+        var myStackedFloatingChart = echarts.init(document.getElementById('stacked-floating-bar'));
+
+        // Placeholded Style
+        var placeHoledStyle = {
+            normal:{
+                barBorderColor:'rgba(0,0,0,0)',
+                color:'rgba(0,0,0,0)'
+            },
+            emphasis:{
+                barBorderColor:'rgba(0,0,0,0)',
+                color:'rgba(0,0,0,0)'
+            }
+        };
+
+        // Data Style
+        var dataStyle = {
+            normal: {
+                label : {
+                    show: true,
+                    position: 'insideLeft',
+                    formatter: '{c}%'
+                }
+            }
+        };
+
+        // Chart Options
+        // ------------------------------
+        chartOptions = {
+
+            // Setup grid
+            grid: {
+                x: 40,
+                x2: 40,
+                y: 80,
+                y2: 30
+            },
+
+            // Add tooltip
+            tooltip : {
+                trigger: 'axis',
+                axisPointer : {            // Axis indicator axis trigger effective
+                    type : 'shadow'        // The default is a straight line, optionally: 'line' | 'shadow'
+                },
+                formatter : '{b}<br/>{a0}:{c0}%<br/>{a2}:{c2}%<br/>{a4}:{c4}%<br/>{a6}:{c6}%'
+            },
+
+            // Add legend
+            legend: {
+                y: 55,
+                itemGap : document.getElementById('stacked-floating-bar').offsetWidth / 8,
+                data:['GML', 'PYP','WTC', 'ZTW']
+            },
+
+            // Add custom colors
+            color: ['#666EE8', '#FF9149', '#FF4961', '#2D2E4F'],
+
+            // Enable drag recalculate
+            calculable: true,
+
+            // Horizontal axis
+            xAxis: [{
+                type : 'category',
+                splitLine: {show: false},
+                data : ['Chongqing', 'Tianjin', 'Shanghai', 'Beijing']
+            }],
+
+            // Vertical axis
+            yAxis: [{
+                type : 'value',
+                position: 'top',
+                splitLine: {show: false},
+                axisLabel: {show: false}
+            }],
+
+            // Add series
+            series: [
+                {
+                    name:'GML',
+                    type:'bar',
+                    stack: 'Total',
+                    itemStyle : dataStyle,
+                    data:[38, 50, 33, 72]
+                },
+                {
+                    name:'GML',
+                    type:'bar',
+                    stack: 'Total',
+                    itemStyle: placeHoledStyle,
+                    data:[62, 50, 67, 28]
+                },
+                {
+                    name:'PYP',
+                    type:'bar',
+                    stack: 'Total',
+                    itemStyle : dataStyle,
+                    data:[61, 41, 42, 30]
+                },
+                {
+                    name:'PYP',
+                    type:'bar',
+                    stack: 'Total',
+                    itemStyle: placeHoledStyle,
+                    data:[39, 59, 58, 70]
+                },
+                {
+                    name:'WTC',
+                    type:'bar',
+                    stack: 'Total',
+                    itemStyle : dataStyle,
+                    data:[37, 35, 44, 60]
+                },
+                {
+                    name:'WTC',
+                    type:'bar',
+                    stack: 'Total',
+                    itemStyle: placeHoledStyle,
+                    data:[63, 65, 56, 40]
+                },
+                {
+                    name:'ZTW',
+                    type:'bar',
+                    stack: 'Total',
+                    itemStyle : dataStyle,
+                    data:[71, 50, 31, 39]
+                },
+                {
+                    name:'ZTW',
+                    type:'bar',
+                    stack: 'Total',
+                    itemStyle: placeHoledStyle,
+                    data:[29, 50, 69, 61]
+                }
+            ]
+        };
+
+        // Apply options
+        // ------------------------------
+
+        myStackedFloatingChart.setOption(chartOptions);
+
+        // Resize chart
+        // ------------------------------
+
+        $(function () {
+
+            // Resize chart on menu width change and window resize
+            $(window).on('resize', resize);
+            $(".menu-toggle").on('click', resize);
+
+            // Resize function
+            function resize() {
+                setTimeout(function() {
+
+                    // Resize chart
+                    myStackedFloatingChart.resize();
+                }, 200);
+            }
+        });
+    </script>
+
+    <script type="text/javascript" src="https://legacy.datatables.net/release-datatables/media/js/jquery.js"></script>
+    <script type="text/javascript" src="https://legacy.datatables.net/release-datatables/media/js/jquery.dataTables.js"></script>
+	<script type="text/javascript" src="https://legacy.datatables.net/release-datatables/extras/FixedColumns/media/js/FixedColumns.js"></script>
+
+    <!-- <script type="text/javascript">
+        $(document).ready( function () {
+            var oTable = $('#outlook').dataTable( {
+                "sScrollY": "300px",
+                "bPaginate": false,
+                "sScrollX": "100%",
+                "bScrollCollapse": true,
+                "bInfo": false,
+                "bFilter": false,
+                "ordering": false,
+                "aaSorting": []
+            } );
+            
+            new FixedColumns( oTable );
+        } );
+    </script> -->
+    
+    <script type="text/javascript">
+        $(document).ready( function () {
+            var oTable = $('#with_blu').dataTable( {
+                "sScrollY": "322px",
+                "bPaginate": false,
+                "sScrollX": "100%",
+                "bScrollCollapse": true,
+                "bInfo": false,
+                "bFilter": false,
+                "ordering": false,
+                "aaSorting": []
+            } );
+
+            var aTable = $('#non_blu').dataTable( {
+                "sScrollY": "300px",
+                "bPaginate": false,
+                "sScrollX": "100%",
+                "bScrollCollapse": true,
+                "bInfo": false,
+                "bFilter": false,
+                "ordering": false,
+                "aaSorting": []
+            } );
+            
+            new FixedColumns( oTable );
+            new FixedColumns( aTable );
+        } );
+    </script>
+
+    <script type="text/javascript">
+        var ashiap = $('#example').dataTable( {
+            "sScrollY": "300px",
+            "bPaginate": false,
+            "sScrollX": "100%",
+            "bScrollCollapse": true,
+            "bInfo": false,
+            "bFilter": false,
+            "ordering": false,
+            "aaSorting": []
+        } );
+
+        new FixedColumns( ashiap );
+    </script>
+
+    <script type="text/javascript">
+        var mantap = $('#console').dataTable( {
+            "sScrollY": "300px",
+            "bPaginate": false,
+            "sScrollX": "100%",
+            "bScrollCollapse": true,
+            "bInfo": false,
+            "bFilter": false,
+            "ordering": false,
+            "aaSorting": []
+        } );
+
+        new FixedColumns( mantap );
+    </script>
+
+    <script type="text/javascript" src="http://localhost:8888/Dashboard-BA015/fusioncharts/fusioncharts.js"></script>
+	<script type="text/javascript" src="http://localhost:8888/Dashboard-BA015/fusioncharts/themes/fusioncharts.theme.fusion.js"></script>
+
+    
+    <script type="text/javascript">
+        const dataSource = {
+            chart: {
+                // caption: "Top 5 countries with Global Oil Reserves",
+                // subcaption: "MMbbl= One Million barrels",
+                enablesmartlabels: "1",
+                showlabels: "1",
+                numbersuffix: " MMbbl",
+                usedataplotcolorforlabels: "1",
+                plottooltext: "$label, <b>$value</b>",
+                theme: "fusion",
+                bgAlpha: "0,0",
+                legendPosition: "top",
+            },
+            data: [
+                {
+                    label: "Kas Bank",
+                    value: "480121"
+                },
+                {
+                    label: "Kas Tunai",
+                    value: "68344"
+                }
+            ]
+            };
+
+            FusionCharts.ready(function() {
+            var myChart = new FusionCharts({
+                type: "doughnut2d",
+                renderAt: "uang-bendahara",
+                width: '100%',
+                dataFormat: "json",
+                containerBackgroundOpacity: '0', // to make a transparent background
+                dataSource
+            }).render();
+        });
+    </script>
+
+    <script type="text/javascript">
+        // FusionCharts["debugger"].outputTo(function (message) {
+        //     document.getElementById('debugger-output').innerHTML += '<p>' +
+        //         message + '</p>';
+        // });
+        // FusionCharts["debugger"].enable(true);
+
+        FusionCharts.ready(function() {
+            var populationMap = new FusionCharts({
+                type: 'maps/indonesia',
+                renderAt: 'chart-container',
+                width: '100%',
+                height: '440%',
+                dataFormat: 'json',
+                // wMode: 'transparent',
+                containerBackgroundOpacity: '0', // to make a transparent background
+                dataSource: {
+                    "chart": {
+                        // "caption": "Global Population",
+                        // "theme": "fint",
+                        "theme": "gammel",
+                        "baseFontSize": "12",
+                        // "numberSuffix": "%",
+                        "showlegend": "1",
+                        "entitytooltext": "$lname: <b>$datavalue</b>%",
+                        "showBorder": "1",
+                        "borderThickness": "1",
+                        "borderColor": "#cccccc",
+                        // "setTransparent": "1",
+                        "bgAlpha": "0,0", // to make a transparent background
+                        // "canvasBgAlpha": "0",
+                        // "legendBgAlpha": "0",
+                        // "containerBackgroundOpacity": "0"
+                        "legendPosition": "bottom",
+                        "divLineAlpha": "0"
+                    },
+                    "colorrange": {
+                        // triwulan 4
+                        "color": [{
+                            "minvalue": "0",
+                            "maxvalue": "15",
+                            // "code": "#FF0000",
+                            "code": "#FF3333",
+                            "displayValue": "<= 15%"                        }, {
+                            "minvalue": "15.01",
+                            "maxvalue": "39.99",
+                            // "code": "#FFFF00",
+                            "code": "#FFFF33",
+                            "displayValue": "> 15% s.d < 40%"                        },{
+                            "minvalue": "40",
+                            "maxvalue": "60",
+                            // "code": "#00FF00",
+                            "code": "#33FF33",
+                            "displayValue": ">= 40%"                        }
+                        /* triwulan 1
+                        "color": [{
+                            "minvalue": "0",
+                            "maxvalue": "20",
+                            // "code": "#FF0000",
+                            "code": "#FF4500",
+                            "displayValue": "< 20%"
+                        }, {
+                            "minvalue": "20.01",
+                            "maxvalue": "94.99",
+                            // "code": "#FFFF00",
+                            "code": "#FFC000",
+                            "displayValue": "> 20% s.d < 95%"
+                        },{
+                            "minvalue": "95",
+                            "maxvalue": "100",
+                            // "code": "#00FF00",
+                            "code": "#228B22",
+                            "displayValue": ">= 95%"
+                        }
+                        */
+                        /*, {
+                            "minvalue": "1000",
+                            "maxvalue": "5000",
+                            "code": "#A9FF8D",
+                            // "displayValue": "> 1B"
+                        }*/]
+                        /*
+                        "minvalue": "0",
+                        //"startlabel": "Low",
+                        //"endlabel": "High",
+                        "code": "#FF4558",
+                        //"gradient": "1",
+                        "color": [{
+                            "maxvalue": "20.00",
+                            // "code": "#FF4558",
+                            "code": "#FF4500",
+                            // "displayValue": "Median"
+                        }, {
+                            "maxvalue": "80.00",
+                            "code": "#FFC000",
+                            // "displayValue": "Median"
+                        }, {
+                            "maxvalue": "100",
+                            "code": "#228B22"
+                        }]
+                        */
+                    },
+                    "data": [{
+                        "id": "01",
+                        // "value": "",
+                        "value": "28.63",
+                        "link": "wilayah/propinsi/MDY",
+                        "tooltext": "Aceh{br}Realisasi: 28.63%",
+                        "showLabel": "1"
+                    }, {
+                        "id": "02",
+                        // "value": "",
+                        "value": "35.46",
+                        "link": "wilayah/propinsi/MjI",
+                        "tooltext": "Bali{br}Realisasi: 35.46%",
+                        "showLabel": "1"
+                    }, {
+                        "id": "35",
+                        // "value": "",
+                        "value": "32.71",
+                        "link": "wilayah/propinsi/MzA",
+                        "tooltext": "Bangka Belitung{br}Realisasi: 32.71%",
+                        "showLabel": "1"
+                    }, {
+                        "id": "33",
+                        // "value": "",
+                        "value": "27.87",
+                        "link": "wilayah/propinsi/Mjk",
+                        "tooltext": "Banten{br}Realisasi: 27.87%",
+                        "showLabel": "1"
+                    }, {
+                        "id": "03",
+                        // "value": "",
+                        "value": "36.27",
+                        "link": "wilayah/propinsi/MjY",
+                        "tooltext": "Bengkulu{br}Realisasi: 36.27%",
+                        "showLabel": "1"
+                    }, {
+                        "id": "07",
+                        // "value": "",
+                        "value": "33.51",
+                        "link": "wilayah/propinsi/MDM",
+                        "tooltext": "Jawa Tengah{br}Realisasi: 33.51%",
+                        "showLabel": "1"
+                    }, {
+                        "id": "13",
+                        // "value": "",
+                        "value": "33.67",
+                        "link": "wilayah/propinsi/MTQ",
+                        "tooltext": "Kalimantan Tengah{br}Realisasi: 33.67%",
+                        "showLabel": "1"
+                    }, {
+                        "id": "21",
+                        // "value": "",
+                        "value": "23.42",
+                        "link": "wilayah/propinsi/MTg",
+                        "tooltext": "Sulawesi Tengah{br}Realisasi: 23.42%",
+                        "showLabel": "1"
+                    }, {
+                        "id": "08",
+                        // "value": "",
+                        "value": "31.45",
+                        "link": "wilayah/propinsi/MDU",
+                        "tooltext": "Jawa Timur{br}Realisasi: 31.45%",
+                        "showLabel": "1"
+                    }, {
+                        "id": "14",
+                        // "value": "",
+                        "value": "32.4",
+                        "link": "wilayah/propinsi/MTY",
+                        "tooltext": "Kalimantan Timur{br}Realisasi: 32.4%",
+                        "showLabel": "1"
+                    }, {
+                        "id": "18",
+                        // "value": "",
+                        "value": "31",
+                        "link": "wilayah/propinsi/MjQ",
+                        "tooltext": "Nusa Tenggara Timur{br}Realisasi: 31%",
+                        "showLabel": "1"
+                    }, {
+                        "id": "34",
+                        // "value": "",
+                        "value": "31.47",
+                        "link": "wilayah/propinsi/MzE",
+                        "tooltext": "Gorontalo{br}Realisasi: 31.47%",
+                        "showLabel": "1"
+                    }, {
+                        "id": "04",
+                        // "value": "",
+                        "value": "40.74",
+                        "link": "wilayah/propinsi/MDE",
+                        "tooltext": "DKI Jakarta{br}Realisasi: 40.74%",
+                        "showLabel": "1"
+                    }, {
+                        "id": "05",
+                        // "value": "",
+                        "value": "31.64",
+                        "link": "wilayah/propinsi/MTA",
+                        "tooltext": "Jambi{br}Realisasi: 31.64%",
+                        "showLabel": "1"
+                    }, {
+                        "id": "15",
+                        // "value": "",
+                        "value": "27.22",
+                        "link": "wilayah/propinsi/MTI",
+                        "tooltext": "Lampung{br}Realisasi: 27.22%",
+                        "showLabel": "1"
+                    }, {
+                        "id": "28",
+                        // "value": "",
+                        "value": "26.05",
+                        "link": "wilayah/propinsi/MjE",
+                        "tooltext": "Maluku{br}Realisasi: 26.05%",
+                        "showLabel": "1"
+                    }, {
+                        "id": "29",
+                        // "value": "",
+                        "value": "32.42",
+                        "link": "wilayah/propinsi/Mjg",
+                        "tooltext": "Maluku Utara{br}Realisasi: 32.42%",
+                        "showLabel": "1"
+                    }, {
+                        "id": "31",
+                        // "value": "",
+                        "value": "31.12",
+                        "link": "wilayah/propinsi/MTc",
+                        "tooltext": "Sulawesi Utara{br}Realisasi: 31.12%",
+                        "showLabel": "1"
+                    }, {
+                        "id": "26",
+                        // "value": "",
+                        "value": "32.83",
+                        "link": "wilayah/propinsi/MDc",
+                        "tooltext": "Sumatera Utara{br}Realisasi: 32.83%",
+                        "showLabel": "1"
+                    }, {
+                        "id": "36",
+                        // "value": "",
+                        "value": "35.44",
+                        "link": "wilayah/propinsi/MjU",
+                        "tooltext": "Papua{br}Realisasi: 35.44%",
+                        "showLabel": "1"
+                    }, {
+                        "id": "37",
+                        // "value": "",
+                        "value": "33.56",
+                        "link": "wilayah/propinsi/MDk",
+                        "tooltext": "Riau{br}Realisasi: 33.56%",
+                        "showLabel": "1"
+                    }, {
+                        "id": "40",
+                        // "value": "",
+                        "value": "28.56",
+                        "link": "wilayah/propinsi/MzI",
+                        "tooltext": "Kepulauan Riau{br}Realisasi: 28.56%",
+                        "showLabel": "1"
+                    }, {
+                        "id": "22",
+                        // "value": "",
+                        "value": "34.79",
+                        "link": "wilayah/propinsi/MjA",
+                        "tooltext": "Sulawesi Tenggara{br}Realisasi: 34.79%",
+                        "showLabel": "1"
+                    }, {
+                        "id": "12",
+                        // "value": "",
+                        "value": "32.13",
+                        "link": "wilayah/propinsi/MTU",
+                        "tooltext": "Kalimantan Selatan{br}Realisasi: 32.13%",
+                        "showLabel": "1"
+                    }, {
+                        "id": "38",
+                        // "value": "",
+                        "value": "31.98",
+                        "link": "wilayah/propinsi/MTk",
+                        "tooltext": "Sulawesi Selatan{br}Realisasi: 31.98%",
+                        "showLabel": "1"
+                    }, {
+                        "id": "32",
+                        // "value": "",
+                        "value": "35.29",
+                        "link": "wilayah/propinsi/MTE",
+                        "tooltext": "Sumatera Selatan{br}Realisasi: 35.29%",
+                        "showLabel": "1"
+                    }, {
+                        "id": "39",
+                        // "value": "",
+                        "value": "33.14",
+                        "link": "wilayah/propinsi/MzM",
+                        "tooltext": "Papua Barat{br}Realisasi: 33.14%",
+                        "showLabel": "1"
+                    }, {
+                        "id": "30",
+                        // "value": "",
+                        "value": "30.75",
+                        "link": "wilayah/propinsi/MDI",
+                        "tooltext": "Jawa Barat{br}Realisasi: 30.75%",
+                        "showLabel": "1"
+                    }, {
+                        "id": "11",
+                        // "value": "",
+                        "value": "32.4",
+                        "link": "wilayah/propinsi/MTY",
+                        "tooltext": "Kalimantan Timur{br}Realisasi: 32.4%",
+                        "showLabel": "1"
+                    }, {
+                        "id": "17",
+                        // "value": "",
+                        "value": "31.22",
+                        "link": "wilayah/propinsi/MjM",
+                        "tooltext": "Nusa Tenggara Barat{br}Realisasi: 31.22%",
+                        "showLabel": "1"
+                    }, {
+                        "id": "41",
+                        // "value": "",
+                        "value": "29.92",
+                        "link": "wilayah/propinsi/MzQ",
+                        "tooltext": "Sulawesi Barat{br}Realisasi: 29.92%",
+                        "showLabel": "1"
+                    }, {
+                        "id": "24",
+                        // "value": "",
+                        "value": "33.29",
+                        "link": "wilayah/propinsi/MDg",
+                        "tooltext": "Sumatera Barat{br}Realisasi: 33.29%",
+                        "showLabel": "1"
+                    }, {
+                        "id": "10",
+                        // "value": "",
+                        "value": "30.46",
+                        "link": "wilayah/propinsi/MDQ",
+                        "tooltext": "D.I.Y Yogyakarta{br}Realisasi: 30.46%",
+                        "showLabel": "1"
+                    }, {
+                        "id": "42",
+                        // "value": "",
+                        "value": "29.73",
+                        "link": "wilayah/propinsi/MzU",
+                        "tooltext": "Kalimantan Utara{br}Realisasi: 29.73%",
+                        "showLabel": "1"
+                    }]
+                },
+            });
+            populationMap.render();
+        });
+    </script>
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            var myChart = Highcharts.chart('container', {
+                chart: {
+                    type: 'pie',
+                    options3d: {
+                        enabled: true,
+                        alpha: 45,
+                        beta: 0
+                    },
+                    backgroundColor: 'transparent',
+                    height: 450,
+                },
+                title: {
+                    text: 'Jumlah Paket senilai Rp 0.00 M per 01 Januari 1970',
+                    style: {
+                        fontSize: '16px'
+                    }
+                },
+                accessibility: {
+                    point: {
+                        valueSuffix: '%'
+                    }
+                },
+                tooltip: {
+                    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                },
+                plotOptions: {
+                    pie: {
+                        allowPointSelect: true,
+                        cursor: 'pointer',
+                        depth: 35,
+                        dataLabels: {
+                            enabled: true,
+                            format: '{point.name}: <br> {point.y} Paket <br> Rp{point.x} M',
+                            backgroundColor: 'black',
+                            color: 'white'
+                        }
+                    }
+                },
+                credits: {
+                    enabled: false
+                },
+                series: [{
+                    type: 'pie',
+                    name: 'Perkembangan Belanja Modal',
+                    data: [{
+                        name: 'Proses Lelang',
+                        y: ,
+                        x: ,
+                        color: '#4270c1'
+                    }, {
+                        name: 'Proses Pengerjaan',
+                        y: ,
+                        x: ,
+                        color: '#e97c30'
+                    }, {
+                        name: 'Selesai',
+                        y: ,
+                        x: ,
+                        color: '#a3a3a3'
+                    }, {
+                        name: 'Dibatalkan',
+                        y: ,
+                        x: ,
+                        color: '#fbbd00'
+                    }]
+                }]
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            var myChart = Highcharts.chart('container2', {
+                chart: {
+                    type: 'pie',
+                    backgroundColor: 'transparent'
+                },
+                title: {
+                    text: 'Dalam Proses Pengerjaan (Rp Miliar, 0 Paket)',
+                    style: {
+                        fontSize: '16px'
+                    }
+                },
+                accessibility: {
+                    point: {
+                        valueSuffix: '%'
+                    }
+                },
+                tooltip: {
+                    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'right',
+                    verticalAlign: 'bottom',
+                    itemMarginTop: 5,
+                    itemMarginBottom: 5
+                },
+                plotOptions: {
+                    pie: {
+                        allowPointSelect: true,
+                        cursor: 'pointer',
+                        depth: 35,
+                        dataLabels: {
+                            enabled: true,
+                            format: 'Rp{point.y} M <br> ({point.x} Paket)',
+                            backgroundColor: 'black',
+                            color: 'white'
+                        },
+                        showInLegend: true
+                    }
+                },
+                credits: {
+                    enabled: false
+                },
+                series: [{
+                    type: 'pie',
+                    name: 'Dalam Proses Pengerjaan',
+                    data: [
+                                        ]
+                }]
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            var myChart = Highcharts.chart('container3', {
+                chart: {
+                    type: 'pie',
+                    backgroundColor: 'transparent'
+                },
+                title: {
+                    text: 'Proses Lelang (Rp Miliar,  Paket)',
+                    style: {
+                        fontSize: '16px'
+                    }
+                },
+                accessibility: {
+                    point: {
+                        valueSuffix: '%'
+                    }
+                },
+                tooltip: {
+                    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'right',
+                    verticalAlign: 'bottom',
+                    itemMarginTop: 5,
+                    itemMarginBottom: 5
+                },
+                plotOptions: {
+                    pie: {
+                        allowPointSelect: true,
+                        cursor: 'pointer',
+                        depth: 35,
+                        dataLabels: {
+                            enabled: true,
+                            format: 'Rp{point.y} M <br> ({point.x} Paket)',
+                            backgroundColor: 'black',
+                            color: 'white'
+                        },
+                        showInLegend: true
+                    }
+                },
+                credits: {
+                    enabled: false
+                },
+                series: [{
+                    type: 'pie',
+                    name: 'Proses Lelang',
+                    data: [
+                                        ]
+                }]
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            var myChart = Highcharts.chart('container4', {
+                chart: {
+                    type: 'pie',
+                    backgroundColor: 'transparent'
+                },
+                title: {
+                    text: 'Dibatalkan (Rp Miliar,  Paket)',
+                    style: {
+                        fontSize: '16px'
+                    }
+                },
+                accessibility: {
+                    point: {
+                        valueSuffix: '%'
+                    }
+                },
+                tooltip: {
+                    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'right',
+                    verticalAlign: 'bottom',
+                    itemMarginTop: 5,
+                    itemMarginBottom: 5
+                },
+                plotOptions: {
+                    pie: {
+                        allowPointSelect: true,
+                        cursor: 'pointer',
+                        depth: 35,
+                        dataLabels: {
+                            enabled: true,
+                            format: 'Rp{point.y} M <br> ({point.x} Paket)',
+                            backgroundColor: 'black',
+                            color: 'white'
+                        },
+                        showInLegend: true
+                    }
+                },
+                credits: {
+                    enabled: false
+                },
+                series: [{
+                    type: 'pie',
+                    name: 'Dibatalkan',
+                    data: [
+                                        ]
+                }]
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            var myChart = Highcharts.chart('container5', {
+                chart: {
+                    type: 'pie',
+                    backgroundColor: 'transparent'
+                },
+                title: {
+                    text: 'Dibatalkan (Rp Miliar,  Paket)',
+                    style: {
+                        fontSize: '16px'
+                    }
+                },
+                accessibility: {
+                    point: {
+                        valueSuffix: '%'
+                    }
+                },
+                tooltip: {
+                    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'right',
+                    verticalAlign: 'bottom',
+                    itemMarginTop: 5,
+                    itemMarginBottom: 5
+                },
+                plotOptions: {
+                    pie: {
+                        allowPointSelect: true,
+                        cursor: 'pointer',
+                        depth: 35,
+                        dataLabels: {
+                            enabled: true,
+                            format: 'Rp{point.y} M <br> ({point.x} Paket)',
+                            backgroundColor: 'black',
+                            color: 'white'
+                        },
+                        showInLegend: true
+                    }
+                },
+                credits: {
+                    enabled: false
+                },
+                series: [{
+                    type: 'pie',
+                    name: 'Selessai Pengerjaan',
+                    data: [
+                                        ]
+                }]
+            });
+        });
+    </script>
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+    <script src="http://localhost:8888/Dashboard-BA015/app-assets/vendors/js/forms/validation/jqBootstrapValidation.js" type="text/javascript"></script>
+    <script src="http://localhost:8888/Dashboard-BA015/app-assets/js/scripts/forms/validation/form-validation.js" type="text/javascript"></script>
+
+    <script src="http://localhost:8888/Dashboard-BA015/app-assets/vendors/js/forms/repeater/jquery.repeater.min.js" type="text/javascript"></script>
+    <script src="http://localhost:8888/Dashboard-BA015/app-assets/js/scripts/forms/form-repeater.js" type="text/javascript"></script>
+
+    <script src="http://localhost:8888/Dashboard-BA015/app-assets/vendors/js/extensions/toastr.min.js" type="text/javascript"></script>
+    <script src="http://localhost:8888/Dashboard-BA015/app-assets/js/scripts/extensions/toastr.js" type="text/javascript"></script>
+
+    <script src="http://localhost:8888/Dashboard-BA015/app-assets/vendors/js/extensions/sweetalert.min.js" type="text/javascript"></script>
+    <script src="http://localhost:8888/Dashboard-BA015/app-assets/js/scripts/extensions/sweet-alerts.js" type="text/javascript"></script>
+
+    <script src="http://localhost:8888/Dashboard-BA015/app-assets/js/scripts/forms/select/form-select2.js" type="text/javascript"></script>
+
+    <script>
+        $('#submitForm').on('click',function(e){
+            e.preventDefault();
+            var form = $(this).parents('form');
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "You won't be able to revert this!",
+                type: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, delete it!'
+            }).then((result) => {
+                if (result.value) {
+
+                    form.submit();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $('.select2-size-xs').select2({
+            containerCssClass: 'select-xs'
+        });
+    </script>
+</body>
+</html>
