@@ -79,7 +79,8 @@
 					</li>
 					<li class="nav-item">
 						<a class="navbar-brand" href="#">
-							<h3 class="brand-text">Dashboard Pelaksanaan Anggaran</h3>
+							<h3 class="brand-text d-none d-md-block">Dashboard Pelaksanaan Anggaran</h3>
+							<h3 class="brand-text d-md-none">Dashboard</h3>
 						</a>
 					</li>
 					<li class="nav-item d-md-none">
@@ -101,7 +102,7 @@
 					<ul class="nav navbar-nav float-right">
 						<li class="dropdown dropdown-user nav-item">
 							<a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
-								<span class="mr-1">Hello, </span>
+								<span class="mr-1 user-name">Hello, </span>
 								<span class="user-name text-bold-700">Dieksa Bebadito</span>
 								<span class="avatar avatar-online">
 									<img src='img/beba.jpeg' alt="Nama Pegawai" style="width:30px; height:30px;"><i></i>
@@ -162,32 +163,80 @@
 			</div>
 			<div class="content-body">
 				<!-- Monev -->
-				<div class="row">
-				  <div class="col-lg-4 col-md-6">
+				<div class="row match-height">
+				  <div class="col-lg-4 col-md-12">
 						<div class="card pull-up bg-hexagons">
 							<div class="card-content">
 								<div class="row">
-									<div class="col-12" style="height: 150px;">
+									<div class="col-12">
 										<div id="customizedGaugePKPA" class="height-200 echart-container"></div>
 									</div>
-									<div class="col-lg-6" style="height: 153px;">
+									<div class="col-xl-6 col-lg-12 col-md-6">
 										<div id="customizedGaugeIKPA" class="height-200 echart-container"></div>
 									</div>
-									<div class="col-lg-6" style="height: 153px;">
+									<div class="col-xl-6 col-lg-12 col-md-6">
 										<div id="customizedGaugeSMART" class="height-200 echart-container"></div>
 									</div>
 								</div>
 							</div>
 						</div>
 				  </div>
-					<div class="col-lg-4 col-md-6">
-					  <div class="card pull-up">
+					<div class="col-lg-4 col-md-12">
+					  <div class="card pull-up bg-hexagons">
 					  	<div class="card-header bg-hexagons">
 					  		<h4 class="card-title text-center text-primary font-large-1"><strong>KEMENKEU</strong></h4>
 					  	</div>
 							<div class="card-content collapse show bg-hexagons">
 								<div class="card-body pt-0">
-									<div class="row">
+									<div class="row text-center">
+									  <div class="col-6">
+									    <h5 class="h4 text-bold-600 text-primary">Termasuk BLU</h5>
+									  </div>
+									  <div class="col-6">
+									    <h5 class="h4 text-bold-600 text-danger">NON BLU</h5>
+									  </div>
+									</div>
+									<div class="row text-center">
+									  <div class="col-6">
+									    <span class="h5 text-bold-500 text-primary">PAGU</span>
+									  </div>
+									  <div class="col-6">
+									    <span class="h5 text-bold-500 text-danger">PAGU</span>
+									  </div>
+									</div>
+									<div class="row text-center">
+									  <div class="col-6">
+									    <span class="h5 text-bold-500 text-primary">42,58 T</span>
+									  </div>
+									  <div class="col-6">
+									    <span class="h5 text-bold-500 text-danger">34,14 T</span>
+									  </div>
+									</div>
+									<div class="row text-center mt-1">
+									  <div class="col-6">
+									    <span class="h5 text-bold-500 text-primary">REALISASI</span>
+									  </div>
+									  <div class="col-6">
+									    <span class="h5 text-bold-500 text-danger">REALISASI</span>
+									  </div>
+									</div>
+									<div class="row text-center">
+									  <div class="col-6">
+									    <span class="h5 text-bold-500 text-primary">12,73 T</span>
+									  </div>
+									  <div class="col-6">
+									    <span class="h5 text-bold-500 text-danger">8,09 T</span>
+									  </div>
+									</div>
+									<div class="row text-center mt-2">
+									  <div class="col-6">
+									    <h5 class="text-bold-500 font-large-2 text-primary">29,90%</h5>
+									  </div>
+									  <div class="col-6">
+									    <h5 class="text-bold-500 font-large-2 text-danger">23,72%</h5>
+									  </div>
+									</div>
+									<!-- <div class="row">
 									  <div class="col-6 text-center">
 									    <h5 class="h4 text-bold-600 text-primary">Termasuk BLU</h5>
 											<span class="h5 text-bold-500 text-primary">PAGU</span><br>
@@ -204,22 +253,22 @@
 											<span class="h5 text-bold-500 text-danger">8,09 T</span><br>
 											<h5 class="text-bold-500 mt-2 font-large-2 text-danger">23,72%</h5>
 									  </div>
-									</div>
+									</div> -->
 								</div>
 							</div>
 					  </div>
 					</div>
-					<div class="col-lg-4 col-md-6">
+					<div class="col-lg-4 col-md-12">
 					  <div class="card pull-up">
 					  	<div class="card-content bg-hexagons">
 								<div class="row">
-									<div class="col-12" style="height: 150px;">
+									<div class="col-12">
 										<div id="realisasiPnGauge" class="height-200 echart-container"></div>
 									</div>
-									<div class="col-md-6" style="height: 153px;">
+									<div class="col-xl-6 col-lg-12 col-md-6">
 										<div id="partisipasiSmartGauge" class="height-200 echart-container"></div>
 									</div>
-									<div class="col-md-6" style="height: 153px;">
+									<div class="col-xl-6 col-lg-12 col-md-6">
 										<div id="partisipasiEmonevGauge" class="height-200 echart-container"></div>
 									</div>
 								</div>
@@ -601,7 +650,8 @@
 	<!-- BEGIN PAGE LEVEL JS-->
 	<!-- <script src="app-assets/js/scripts/pages/dashboard-ecommerce.js" type="text/javascript"></script> -->
 
-	<script src="app-assets/vendors/js/echarts.min.js" type="text/javascript"></script>
+	<!-- <script src="app-assets/vendors/js/echarts.min.js" type="text/javascript"></script> -->
+	<script src="echarts-5-1-1/dist/echarts.js" type="text/javascript"></script>
 	<script src="app-assets/vendors/js/charts/echarts/chart/funnel.js" type="text/javascript"></script>
 	<script src="app-assets/vendors/js/charts/echarts/chart/gauge.js" type="text/javascript"></script>
 	<script src="app-assets/vendors/js/charts/echarts/chart/bar.js" type="text/javascript"></script>
@@ -704,7 +754,7 @@
 
 	<script type="text/javascript">
 		var pkpaGauge = document.getElementById('customizedGaugePKPA');
-		var myChart = echarts.init(pkpaGauge);
+		var pkpaChart = echarts.init(pkpaGauge);
 		var option;
 
 		option = {
@@ -730,45 +780,35 @@
 					icon: 'path://M12.8,0.7l12,40.1H0.7L12.8,0.7z',
 					length: '50%',
 					width: 5,
-					offsetCenter: [0, -20],
+					offsetCenter: [0, -30],
 					itemStyle: {
 						color: 'auto'
 					}
 				},
 				axisTick: {
-					length: 10,
+					length: 5,
 					lineStyle: {
 						color: 'auto',
 						width: 2
-					}
+					},
+					distance: 5
 				},
 				splitLine: {
-					length: 20,
+					length: 10,
 					lineStyle: {
 						color: 'auto',
-						width: 5
-					}
+						width: 3
+					},
+					distance: 5
 				},
 				axisLabel: {
 					color: '#464646',
 					fontSize: 12,
-					distance: -40,
+					distance: -35,
 					formatter: function (value) {
-						if (value === 1.00) {
-							return '100%';
-						}
-						else if (value === 0.75) {
-							return '75%';
-						}
-						else if (value === 0.50) {
-							return '50%';
-						}
-						else if (value === 0.25) {
-							return '25%';
-						}
-						else if (value === 0) {
-							return '0%';
-						}
+						const persen = value * 100;
+            if (persen % 25 == 0)
+              return persen + '%'
 					}
 				},
 				title: {
@@ -777,7 +817,7 @@
 				},
 				detail: {
 					fontSize: 15,
-					offsetCenter: [0, '-25%'],
+					offsetCenter: [0, '-5%'],
 					valueAnimation: true,
 					formatter: function (value) {
 						return parseFloat((value*100).toFixed(2)).toString() + '%';
@@ -786,18 +826,25 @@
 					color: 'auto',
 				},
 				data: [{
-					value: 0.27137,
-					name: 'Capaian IKU PKPA Kemenkeu'
+					value: 0.2714,
+					name: 'Capaian IKU PKPA \nKemenkeu'
 				}]
 			}]
 		};
 
-		option && myChart.setOption(option);
+		option && pkpaChart.setOption(option);
+		$(function(){
+			$(window).on('resize', function() {
+				if (pkpaChart != null && pkpaChart != undefined) {
+					pkpaChart.resize()
+				}
+			})
+		});
 	</script>
 
 	<script type="text/javascript">
 		var ikpaGauge = document.getElementById('customizedGaugeIKPA');
-		var myChart = echarts.init(ikpaGauge);
+		var ikpaChart = echarts.init(ikpaGauge);
 		var option;
 
 		option = {
@@ -823,45 +870,35 @@
 					icon: 'path://M12.8,0.7l12,40.1H0.7L12.8,0.7z',
 					length: '50%',
 					width: 5,
-					offsetCenter: [0, '-60%'],
+					offsetCenter: [0, -30],
 					itemStyle: {
 						color: 'auto'
 					}
 				},
 				axisTick: {
-					length: 10,
+					length: 5,
 					lineStyle: {
 						color: 'auto',
 						width: 2
-					}
+					},
+					distance: 5
 				},
 				splitLine: {
-					length: 20,
+					length: 10,
 					lineStyle: {
 						color: 'auto',
-						width: 5
-					}
+						width: 3
+					},
+					distance: 5
 				},
 				axisLabel: {
 					color: '#464646',
 					fontSize: 12,
-					distance: -40,
+					distance: -35,
 					formatter: function (value) {
-						if (value === 1.00) {
-							return '100%';
-						}
-						else if (value === 0.75) {
-							return '75%';
-						}
-						else if (value === 0.50) {
-							return '50%';
-						}
-						else if (value === 0.25) {
-							return '25%';
-						}
-						else if (value === 0) {
-							return '0%';
-						}
+						const persen = value * 100;
+            if (persen % 25 == 0)
+              return persen + '%'
 					}
 				},
 				title: {
@@ -870,7 +907,7 @@
 				},
 				detail: {
 					fontSize: 15,
-					offsetCenter: [0, '-25%'],
+					offsetCenter: [0, '-5%'],
 					valueAnimation: true,
 					formatter: function (value) {
 						return parseFloat((value*100).toFixed(2)).toString() + '%';
@@ -879,18 +916,25 @@
 					color: 'auto',
 				},
 				data: [{
-					value: 99.14,
-					name: 'Capaian IKPA Kemenkeu'
+					value: 0.9914,
+					name: 'Capaian IKPA \nKemenkeu'
 				}]
 			}]
 		};
 
-		option && myChart.setOption(option);
+		option && ikpaChart.setOption(option);
+		$(function(){
+			$(window).on('resize', function() {
+				if (ikpaChart != null && ikpaChart != undefined) {
+					ikpaChart.resize()
+				}
+			})
+		});
 	</script>
 
 	<script type="text/javascript">
 		var smartGauge = document.getElementById('customizedGaugeSMART');
-		var myChart = echarts.init(smartGauge);
+		var smartChart = echarts.init(smartGauge);
 		var option;
 
 		option = {
@@ -916,45 +960,35 @@
 					icon: 'path://M12.8,0.7l12,40.1H0.7L12.8,0.7z',
 					length: '50%',
 					width: 5,
-					offsetCenter: [0, '-60%'],
+					offsetCenter: [0, -30],
 					itemStyle: {
 						color: 'auto'
 					}
 				},
 				axisTick: {
-					length: 10,
+					length: 5,
 					lineStyle: {
 						color: 'auto',
 						width: 2
-					}
+					},
+					distance: 5
 				},
 				splitLine: {
-					length: 20,
+					length: 10,
 					lineStyle: {
 						color: 'auto',
-						width: 5
-					}
+						width: 3
+					},
+					distance: 5
 				},
 				axisLabel: {
 					color: '#464646',
 					fontSize: 12,
-					distance: -40,
+					distance: -35,
 					formatter: function (value) {
-						if (value === 1.00) {
-							return '100%';
-						}
-						else if (value === 0.75) {
-							return '75%';
-						}
-						else if (value === 0.50) {
-							return '50%';
-						}
-						else if (value === 0.25) {
-							return '25%';
-						}
-						else if (value === 0) {
-							return '0%';
-						}
+						const persen = value * 100;
+            if (persen % 25 == 0)
+              return persen + '%'
 					}
 				},
 				title: {
@@ -963,7 +997,7 @@
 				},
 				detail: {
 					fontSize: 15,
-					offsetCenter: [0, '-25%'],
+					offsetCenter: [0, '-5%'],
 					valueAnimation: true,
 					formatter: function (value) {
 						return parseFloat((value*100).toFixed(2)).toString() + '%';
@@ -972,18 +1006,25 @@
 					color: 'auto',
 				},
 				data: [{
-					value: 0.0,
-					name: 'Capaian SMART Kemenkeu'
+					value: 0.1714,
+					name: 'Capaian SMART \nKemenkeu'
 				}]
 			}]
 		};
 
-		option && myChart.setOption(option);
+		option && smartChart.setOption(option);
+		$(function(){
+			$(window).on('resize', function() {
+				if (smartChart != null && smartChart != undefined) {
+					smartChart.resize()
+				}
+			})
+		});
 	</script>
 
 	<script type="text/javascript">
 		var realisasiPnGauge = document.getElementById('realisasiPnGauge');
-		var myChart = echarts.init(realisasiPnGauge);
+		var realPnChart = echarts.init(realisasiPnGauge);
 		var option;
 
 		option = {
@@ -1009,45 +1050,35 @@
 					icon: 'path://M12.8,0.7l12,40.1H0.7L12.8,0.7z',
 					length: '50%',
 					width: 5,
-					offsetCenter: [0, '-60%'],
+					offsetCenter: [0, -30],
 					itemStyle: {
 						color: 'auto'
 					}
 				},
 				axisTick: {
-					length: 10,
+					length: 5,
 					lineStyle: {
 						color: 'auto',
 						width: 2
-					}
+					},
+					distance: 5
 				},
 				splitLine: {
-					length: 20,
+					length: 10,
 					lineStyle: {
 						color: 'auto',
-						width: 5
-					}
+						width: 3
+					},
+					distance: 5
 				},
 				axisLabel: {
 					color: '#464646',
 					fontSize: 12,
-					distance: -40,
+					distance: -35,
 					formatter: function (value) {
-						if (value === 1.00) {
-							return '100%';
-						}
-						else if (value === 0.75) {
-							return '75%';
-						}
-						else if (value === 0.50) {
-							return '50%';
-						}
-						else if (value === 0.25) {
-							return '25%';
-						}
-						else if (value === 0) {
-							return '0%';
-						}
+						const persen = value * 100;
+            if (persen % 25 == 0)
+              return persen + '%'
 					}
 				},
 				title: {
@@ -1056,7 +1087,7 @@
 				},
 				detail: {
 					fontSize: 15,
-					offsetCenter: [0, '-25%'],
+					offsetCenter: [0, '-5%'],
 					valueAnimation: true,
 					formatter: function (value) {
 						return parseFloat((value*100).toFixed(2)).toString() + '%';
@@ -1065,18 +1096,25 @@
 					color: 'auto',
 				},
 				data: [{
-					value: 0.0,
-					name: 'Realisasi Anggaran Prioritas Nasional'
+					value: 0.0014,
+					name: 'Realisasi Anggaran \nPrioritas Nasional'
 				}]
 			}]
 		};
 
-		option && myChart.setOption(option);
+		option && realPnChart.setOption(option);
+		$(function(){
+			$(window).on('resize', function() {
+				if (realPnChart != null && realPnChart != undefined) {
+					realPnChart.resize()
+				}
+			})
+		});
 	</script>
 
 	<script type="text/javascript">
 		var partisipasiSmartGauge = document.getElementById('partisipasiSmartGauge');
-		var myChart = echarts.init(partisipasiSmartGauge);
+		var partisipasiSmartChart = echarts.init(partisipasiSmartGauge);
 		var option;
 
 		option = {
@@ -1102,45 +1140,35 @@
 					icon: 'path://M12.8,0.7l12,40.1H0.7L12.8,0.7z',
 					length: '50%',
 					width: 5,
-					offsetCenter: [0, '-60%'],
+					offsetCenter: [0, -30],
 					itemStyle: {
 						color: 'auto'
 					}
 				},
 				axisTick: {
-					length: 10,
+					length: 5,
 					lineStyle: {
 						color: 'auto',
 						width: 2
-					}
+					},
+					distance: 5
 				},
 				splitLine: {
-					length: 20,
+					length: 10,
 					lineStyle: {
 						color: 'auto',
-						width: 5
-					}
+						width: 3
+					},
+					distance: 5
 				},
 				axisLabel: {
 					color: '#464646',
 					fontSize: 12,
-					distance: -40,
+					distance: -35,
 					formatter: function (value) {
-						if (value === 1.00) {
-							return '100%';
-						}
-						else if (value === 0.75) {
-							return '75%';
-						}
-						else if (value === 0.50) {
-							return '50%';
-						}
-						else if (value === 0.25) {
-							return '25%';
-						}
-						else if (value === 0) {
-							return '0%';
-						}
+						const persen = value * 100;
+            if (persen % 25 == 0)
+              return persen + '%'
 					}
 				},
 				title: {
@@ -1149,7 +1177,7 @@
 				},
 				detail: {
 					fontSize: 15,
-					offsetCenter: [0, '-25%'],
+					offsetCenter: [0, '-5%'],
 					valueAnimation: true,
 					formatter: function (value) {
 						return parseFloat((value*100).toFixed(2)).toString() + '%';
@@ -1158,18 +1186,25 @@
 					color: 'auto',
 				},
 				data: [{
-					value: 0.0,
+					value: 0.1714,
 					name: 'Partisipasi Satker \nMengisi SMART'
 				}]
 			}]
 		};
 
-		option && myChart.setOption(option);
+		option && partisipasiSmartChart.setOption(option);
+		$(function(){
+			$(window).on('resize', function() {
+				if (partisipasiSmartChart != null && partisipasiSmartChart != undefined) {
+					partisipasiSmartChart.resize()
+				}
+			})
+		});
 	</script>
 
 	<script type="text/javascript">
 		var partisipasiEmonevGauge = document.getElementById('partisipasiEmonevGauge');
-		var myChart = echarts.init(partisipasiEmonevGauge);
+		var partisipasiEmonevChart = echarts.init(partisipasiEmonevGauge);
 		var option;
 
 		option = {
@@ -1195,54 +1230,44 @@
 					icon: 'path://M12.8,0.7l12,40.1H0.7L12.8,0.7z',
 					length: '50%',
 					width: 5,
-					offsetCenter: [0, '-60%'],
+					offsetCenter: [0, -30],
 					itemStyle: {
 						color: 'auto'
 					}
 				},
 				axisTick: {
-					length: 10,
+					length: 5,
 					lineStyle: {
 						color: 'auto',
 						width: 2
-					}
+					},
+					distance: 5
 				},
 				splitLine: {
-					length: 20,
+					length: 10,
 					lineStyle: {
 						color: 'auto',
-						width: 5
-					}
+						width: 3
+					},
+					distance: 5
 				},
 				axisLabel: {
 					color: '#464646',
 					fontSize: 12,
-					distance: -40,
+					distance: -35,
 					formatter: function (value) {
-						if (value === 1.00) {
-							return '100%';
-						}
-						else if (value === 0.75) {
-							return '75%';
-						}
-						else if (value === 0.50) {
-							return '50%';
-						}
-						else if (value === 0.25) {
-							return '25%';
-						}
-						else if (value === 0) {
-							return '0%';
-						}
+						const persen = value * 100;
+            if (persen % 25 == 0)
+              return persen + '%'
 					}
 				},
 				title: {
-					offsetCenter: [0, '30%'],
+					offsetCenter: [0, '40%'],
 					fontSize: 15,
 				},
 				detail: {
 					fontSize: 15,
-					offsetCenter: [0, '-25%'],
+					offsetCenter: [0, '-5%'],
 					valueAnimation: true,
 					formatter: function (value) {
 						return parseFloat((value*100).toFixed(2)).toString() + '%';
@@ -1252,12 +1277,19 @@
 				},
 				data: [{
 					value: 0.749,
-					name: 'Partisipasi Satker \nMengisi Komponen E-Monev'
+					name: 'Partisipasi Satker \nMengisi Komponen \nE-Monev'
 				}]
 			}]
 		};
 
-		option && myChart.setOption(option);
+		option && partisipasiEmonevChart.setOption(option);
+		$(function(){
+			$(window).on('resize', function() {
+				if (partisipasiEmonevChart != null && partisipasiEmonevChart != undefined) {
+					partisipasiEmonevChart.resize()
+				}
+			})
+		});
 	</script>
 
 	<script type="text/javascript">
