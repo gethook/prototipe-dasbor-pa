@@ -813,6 +813,54 @@
 				  	</div>
 				</div>
 				<!-- end of Kerugian Negara -->
+
+				<!-- <div class="row">
+				  <div class="col-12">
+				    <div class="card pull-up">
+				    	<div class="card-header bg-info">
+				    		<h4 class="card-title text-white">Informasi Tukin</h4>
+				    	</div>
+							<div class="card-content collapse show">
+								<div class="card-body">
+									<div class="row">
+									  <div class="col-md-3 col-sm-12">
+									    <div id="paguRealTukin" class="echart-container" style="height: 300px;"></div>
+									  </div>
+									  <div class="col-md-9 col-sm-12">
+									    <div id="tukinPlt" class="echart-container ml-3" style="height: 300px;"></div>
+									  </div>
+									</div>
+								</div>
+							</div>
+				    </div>
+				  </div>
+				</div> -->
+				<div class="row">
+				  <div class="col-lg-4 col-md-12">
+						<div class="card pull-up">
+				    	<div class="card-header bg-info">
+				    		<h4 class="card-title text-white">Anggaran Tukin</h4>
+				    	</div>
+							<div class="card-content collapse show">
+								<div class="card-body">
+									<div id="paguRealTukin" class="height-400 echart-container"></div>
+								</div>
+							</div>
+				    </div>
+				  </div>
+					<div class="col-lg-8 col-md-12">
+						<div class="card pull-up">
+				    	<div class="card-header bg-info">
+				    		<h4 class="card-title text-white">Pembayaran Tukin Plt Per Unit Bulan <span id="txtBln" class="txtBln"></span></h4>
+				    	</div>
+							<div class="card-content collapse show">
+								<div class="card-body">
+									<div id="tukinPlt" class="height-400 echart-container"></div>
+								</div>
+							</div>
+				    </div>
+				  </div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -2662,7 +2710,7 @@
 	<script type="text/javascript">
 		// Initialize chart
 		// ------------------------------
-		var myChart = echarts.init(document.getElementById('informasi-tukin'));
+		var paguRealTukinChart = echarts.init(document.getElementById('paguRealTukin'));
 
 		// Chart Options
 		// ------------------------------
@@ -2670,28 +2718,31 @@
 
 			// Add title
 			title: {
-				// text: 'Browser popularity',
-				// subtext: 'Open source information',
+				text: 'Pagu Tukin\n13 Triliun',
+				// subtext: '13 T',
 				x: 'center'
 			},
 
 			// Add tooltip
 			tooltip: {
 				trigger: 'item',
-				formatter: "{a}<br>{b}: {c} T"
+				formatter: "{b}: {c} T <br>{d}%"
 			},
 
 			// Add legend
 			legend: {
+				show: true,
 				orient: 'horizontal',
 				x: 'center',
+				y: 'bottom',
+				// top: 20,
 				// data: ['IE', 'Opera', 'Safari', 'Firefox', 'Chrome']
 				data: ['Sisa Pagu', 'Realisasi']
 			},
 
 			// Add custom colors
 			// color: ['#00A5A8', '#626E82', '#FF7D4D','#FF4558', '#28D094'],
-			color: ['#00CC00', '#606060'],
+			color: ['#00CC00', '#DDDDDD'],
 
 			// Display toolbox
 			toolbox: {
@@ -2708,20 +2759,35 @@
 			series: [{
 				name: 'Anggaran Tukin',
 				type: 'pie',
-				radius: '70%',
+				radius: '60%',
 				center: ['50%', '50%'],
-				itemStyle: {
-					normal: {
-						label: {
-							show: true,
-							position: 'outside',
-							formatter: "{d}%",
-							textStyle: {
-								fontSize : '13',
-							}
+				label: {
+					alignTo: 'labelLine',
+					position: 'outer',
+					margin: 0,
+					formatter : '{txt|{b}}\n\{nil|{c} Triliun}',
+					rich: {
+						txt: {
+							align: 'left'
+						},
+						nil: {
+							align: 'left'
 						}
 					}
 				},
+				// itemStyle: {
+				// 	normal: {
+				// 		label: {
+				// 			show: true,
+				// 			position: 'outside',
+				// 			// alignTo: 'edge',
+				// 			formatter: "{b} \n{c} T ({d}%)",
+				// 			textStyle: {
+				// 				fontSize : '13',
+				// 			}
+				// 		}
+				// 	}
+				// },
 				// itemStyle: {
 				//     normal: {
 				//         label : {
@@ -2747,11 +2813,6 @@
 				data: [
 					{value: 3, name: 'Sisa Pagu'},
 					{value: 10, name: 'Realisasi'},
-					// {value: 335, name: 'IE'},
-					// {value: 310, name: 'Opera'},
-					// {value: 234, name: 'Safari'},
-					// {value: 135, name: 'Firefox'},
-					// {value: 1548, name: 'Chrome'}
 				],
 			}]
 		};
@@ -2759,27 +2820,136 @@
 		// Apply options
 		// ------------------------------
 
-		myChart.setOption(chartOptions);
+		paguRealTukinChart.setOption(chartOptions);
 
 
 		// Resize chart
 		// ------------------------------
 
-		$(function () {
-
-			// Resize chart on menu width change and window resize
-			$(window).on('resize', resize);
-			$(".menu-toggle").on('click', resize);
-
-			// Resize function
-			function resize() {
-				setTimeout(function() {
-
-					// Resize chart
-					myChart.resize();
-				}, 200);
-			}
+		$(function(){
+			$(window).on('resize', function() {
+				if (paguRealTukinChart != null && paguRealTukinChart != undefined) {
+					paguRealTukinChart.resize()
+				}
+			})
 		});
+	</script>
+
+	<script type="text/javascript">
+		// Initialize chart
+		// ------------------------------
+		var pltTukinChart = echarts.init(document.getElementById('tukinPlt'));
+
+		// Chart Options
+		// ------------------------------
+		// bar color #7131a1
+		pltTukinChartOptions = {
+			legend: {},
+			tooltip: {},
+			xAxis: {
+	        type: 'category',
+	        data: ['Setjen', 'Itjen', 'DJA', 'DJP', 'DJBC', 'DJPK', 'DJPPR', 'DJPB', 'DJKN', 'BPPK', 'BKF', 'LNSW']
+	    },
+	    yAxis: {
+	        type: 'value'
+	    },
+	    series: [{
+	        data: [
+						20000000, // Setjen
+						30000000, // Itjen
+						40000000, // DJA
+						605000000, // DJP
+						230000000, // DJBC
+						10000000, // DJPK
+						10000000, // DJPPR
+						105000000, // DJPB
+						60000000, // DJKN
+						30000000, // BPPK
+						5000000, // BKF
+						0, // LNSW
+	        ],
+	        type: 'bar',
+					itemStyle: {
+						color: '#7131a1'
+					}
+	    }]
+		};
+		// Apply options
+		// ------------------------------
+
+		sortedPltChart = {
+			title: {
+				show: true,
+				// text: 'Tukin Plt/Plh',
+				subtext: 'Juta Rupiah',
+				x: 'left'
+			},
+			legend: {},
+			tooltip: {
+			},
+			dataset: [{
+	        dimensions: ['unit', 'tukinplt'],
+	        source: [
+						['Setjen', 20], // n
+						['Itjen', 30], //
+						['DJA', 40], //
+						['DJP', 605], //
+						['DJBC', 230], //
+						['DJPK', 10], //
+						['DJPPR', 10], //
+						['DJPB', 105], //
+						['DJKN', 60], //
+						['BPPK', 30], //
+						['BKF', 5], //
+						['LNSW', 0], //
+	        ]
+	    }, {
+	        transform: {
+	            type: 'sort',
+	            config: { dimension: 'tukinplt', order: 'desc' }
+	        }
+	    }],
+	    xAxis: {
+	        type: 'category',
+	        axisLabel: { interval: 0, rotate: 30 },
+	    },
+	    yAxis: {
+				axisLabel: {
+					formatter: function (value, index) {
+						return (value)
+					}
+				}
+			},
+	    series: {
+	        type: 'bar',
+	        encode: { x: 'unit', y: 'tukinplt' },
+	        datasetIndex: 1,
+					itemStyle: {
+						color: '#7131a1',
+					},
+	    }
+		};
+
+		// pltTukinChart.setOption(pltTukinChartOptions);
+		pltTukinChart.setOption(sortedPltChart);
+
+		$(function(){
+			$(window).on('resize', function() {
+				if (pltTukinChart != null && pltTukinChart != undefined) {
+					pltTukinChart.resize()
+				}
+			})
+		});
+	</script>
+	<script type="text/javascript">
+		$(function() {
+			const nama2Bulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember']
+			const spansTxtBln = $('#txtBln')
+			console.log(spansTxtBln)
+			const date = new Date()
+			const tgl = nama2Bulan[date.getMonth()] + ' ' + date.getFullYear()
+			spansTxtBln.html(tgl)
+		})
 	</script>
 
 	<script type="text/javascript">
