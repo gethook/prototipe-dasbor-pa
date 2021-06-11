@@ -673,6 +673,14 @@
 										<a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
 									</div>
 									<div class="card-content bg-hexagons">
+										<div class="row">
+										  <div class="col-xl-4 offset-xl-2 col-lg-6">
+										    <div id="gaugePraKeuAPBN" class="heights-200 echart-container" style="height: 350px;"></div>
+										  </div>
+										  <div class="col-xl-4 col-lg-6">
+										    <div id="gaugeApkAPBN" class="heights-200 echart-container" style="height: 350px;"></div>
+										  </div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -2184,6 +2192,258 @@
 					myChart.resize();
 				}, 200);
 			}
+		});
+	</script>
+
+	<script type="text/javascript">
+		var praKeuApbnGauge = echarts.init(document.getElementById('gaugePraKeuAPBN'));
+		var option;
+
+		option = {
+			series: [{
+				type: 'gauge',
+				startAngle: 180,
+				endAngle: 0,//180 - ((921/1000)*180),
+				min: 0,
+				max: 921,
+				splitNumber: 8,
+				axisLine: {
+					show: false,
+					lineStyle: {
+						width: 6,
+						color: [
+							[0.250, '#FF4500'],
+							[0.500, '#FFC000'],
+							[0.750, '#4488BB'],
+							[1.000, '#228B22']
+						]
+					}
+				},
+				progress: {
+					show: true,
+					width: 17,
+					itemStyle: {
+						// color: [
+						// 	[0.25, '#FF4500'],
+						// 	[0.5, '#FFC000'],
+						// 	[0.75, '#4488BB'],
+						// 	[1, '#228B22']
+						// ]
+						color: {
+						    type: 'linear',
+						    x: 0,
+						    y: 0,
+						    x2: 1,
+						    y2: 0,
+						    colorStops: [{
+						        offset: 0, color: '#FF4500' // color at 0% position
+						    }, {
+						        offset: 1, color: '#228B22' // color at 100% position
+						    }],
+						    global: false // false by default
+						}
+					}
+				},
+				// itemStyle: {
+				// 	color: [
+				// 		[0.250, '#FF4500'],
+				// 		[0.500, '#FFC000'],
+				// 		[0.750, '#4488BB'],
+				// 		[1.000, '#228B22']
+				// 	]
+				// },
+				pointer: {
+					icon: 'path://M12.8,0.7l12,40.1H0.7L12.8,0.7z',
+					length: '50%',
+					width: 5,
+					offsetCenter: [0, -30],
+					itemStyle: {
+						color: 'auto'
+					}
+				},
+				axisTick: {
+					length: 10,
+					splitNumber: 3,
+					lineStyle: {
+						color: 'auto',
+						width: 12
+					},
+					distance: 15
+				},
+				splitLine: {
+					length: 10,
+					lineStyle: {
+						color: 'auto',
+						width: 5
+					},
+					distance: 15
+				},
+				axisLabel: {
+					color: '#464646',
+					fontSize: 12,
+					distance: -80,
+					formatter: function (value) {
+						if (value == 921) return '{tf|Total Formasi\n}' + '{vl|'+value+'}'
+					},
+					align: 'left',
+					rich: {
+						vl: {
+							align: 'left',
+							color: '#000000'
+						}
+					}
+				},
+				title: {
+					offsetCenter: [0, '30%'],
+					fontSize: 13,
+				},
+				detail: {
+					fontSize: 15,
+					offsetCenter: [0, '-5%'],
+					valueAnimation: true,
+					formatter: function (value) {
+						return value
+						return parseFloat((value*100).toFixed(2)).toString() + '%';
+						return Math.round(value * 100) + '%';
+					},
+					// color: 'auto',
+				},
+				data: [{
+					value: 300,
+					name: 'Pranata Keuangan APBN'
+				}]
+			}]
+		};
+
+		option && praKeuApbnGauge.setOption(option);
+		$(function(){
+			$(window).on('resize', function() {
+				if (praKeuApbnGauge != null && praKeuApbnGauge != undefined) {
+					praKeuApbnGauge.resize()
+				}
+			})
+		});
+	</script>
+
+	<script type="text/javascript">
+		var apkApbnGauge = echarts.init(document.getElementById('gaugeApkAPBN'));
+		var option;
+
+		option = {
+			series: [{
+				type: 'gauge',
+				startAngle: 180,
+				endAngle: 0,//180 - ((921/1000)*180),
+				min: 0,
+				max: 498,
+				splitNumber: 8,
+				axisLine: {
+					show: false,
+					lineStyle: {
+						width: 6,
+						color: [
+							[0.250, '#FF4500'],
+							[0.500, '#FFC000'],
+							[0.750, '#4488BB'],
+							[1.000, '#228B22']
+						]
+					}
+				},
+				progress: {
+					show: true,
+					width: 17,
+					itemStyle: {
+						// color: [
+						// 	[0.25, '#FF4500'],
+						// 	[0.5, '#FFC000'],
+						// 	[0.75, '#4488BB'],
+						// 	[1, '#228B22']
+						// ]
+						color: {
+						    type: 'linear',
+						    x: 0,
+						    y: 0,
+						    x2: 1,
+						    y2: 0,
+						    colorStops: [{
+						        offset: 0, color: '#FF4500' // color at 0% position
+						    }, {
+						        offset: 1, color: '#228B22' // color at 100% position
+						    }],
+						    global: false // false by default
+						}
+					}
+				},
+				pointer: {
+					icon: 'path://M12.8,0.7l12,40.1H0.7L12.8,0.7z',
+					length: '50%',
+					width: 5,
+					offsetCenter: [0, -30],
+					itemStyle: {
+						color: 'auto'
+					}
+				},
+				axisTick: {
+					length: 10,
+					splitNumber: 3,
+					lineStyle: {
+						color: 'auto',
+						width: 12
+					},
+					distance: 15
+				},
+				splitLine: {
+					length: 10,
+					lineStyle: {
+						color: 'auto',
+						width: 5
+					},
+					distance: 15
+				},
+				axisLabel: {
+					color: '#464646',
+					fontSize: 12,
+					distance: -80,
+					formatter: function (value) {
+						if (value == 498) return '{tfapk|Total Formasi\n}' + '{vlapk|'+value+'}'
+					},
+					align: 'left',
+					rich: {
+						vlapk: {
+							align: 'left',
+							color: '#000000'
+						}
+					}
+				},
+				title: {
+					offsetCenter: [0, '30%'],
+					fontSize: 13,
+				},
+				detail: {
+					fontSize: 15,
+					offsetCenter: [0, '-5%'],
+					valueAnimation: true,
+					formatter: function (value) {
+						return value
+						return parseFloat((value*100).toFixed(2)).toString() + '%';
+						return Math.round(value * 100) + '%';
+					},
+					// color: 'auto',
+				},
+				data: [{
+					value: 200,
+					name: 'Analis Pengelola Keuangan APBN'
+				}]
+			}]
+		};
+
+		option && apkApbnGauge.setOption(option);
+		$(function(){
+			$(window).on('resize', function() {
+				if (apkApbnGauge != null && apkApbnGauge != undefined) {
+					apkApbnGauge.resize()
+				}
+			})
 		});
 	</script>
 
@@ -4769,7 +5029,7 @@
 							"link": "wilayah/propinsi/Mjk",
 							"tooltext": "Banten{br}Realisasi: 27.87%",
 							"showLabel": "1"
-						}, 
+						},
 						{
 							"id": "03",
 							// "value": "",
